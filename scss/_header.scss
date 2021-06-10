@@ -1,0 +1,62 @@
+header {
+  background: transparent;
+  position: sticky;
+  z-index: 11111;
+  top: 0;
+  transition: 0.3s;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-weight: 500;
+  .left-header {
+    display: flex;
+    align-items: center;
+    .logo {
+      margin-right: 1rem;
+      img {
+        width: 10rem;
+      }
+    }
+    ul {
+      margin-bottom: 0;
+      display: flex;
+      list-style: none;
+      li {
+        a {
+          background: $dark;
+          padding: 0.3rem 0.8rem;
+          border-radius: 2rem;
+          margin-right: 0.5rem;
+          transition: 0.2s;
+          &:hover {
+            background: darken($color: $dark, $amount: 10);
+          }
+          display: inline-block;
+          text-transform: capitalize;
+          text-decoration: none;
+          color: $fontColor;
+        }
+      }
+    }
+  }
+  .right-header {
+    .isLogout {
+      display: flex;
+      .signin {
+        border-radius: 2rem 0 0 2rem;
+        padding: 0.3rem 0.8rem;
+        background: $yellow;
+        color: $white;
+      }
+      .signup {
+        border-radius: 0 2rem 2rem 0;
+        padding: 0.3rem 0.8rem;
+        background: $green;
+        color: $white;
+      }
+    }
+  }
+}

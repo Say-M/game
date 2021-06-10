@@ -1,0 +1,73 @@
+.slider {
+  padding-bottom: 3rem;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-slide {
+  width: 100%;
+  & > div {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    color: $white;
+    .realise-date {
+      position: absolute;
+      left: 0.5rem;
+      top: 0.5rem;
+      background: transparentize($color: $dark, $amount: 0.2);
+      padding: 0.1rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 90%;
+      z-index: 1;
+      i {
+        margin-right: 0.3rem;
+      }
+    }
+    img {
+      transition: 0.2s ease-in-out;
+      width: 100%;
+      height: 10rem;
+      object-fit: cover;
+    }
+    & > div {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      padding: 0.5rem;
+      transition: 0.2s ease-in-out;
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparentize($color: $dark, $amount: 0.3) 80%
+      );
+      .platform-label {
+        padding: 0.1rem 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 90%;
+      }
+      .game-title {
+        margin: 0.2rem 0;
+        font-weight: 700;
+      }
+    }
+  }
+  &:hover {
+    color: $white;
+    img {
+      transform: scale(1.05);
+    }
+    & > div > div {
+      bottom: -3.5rem;
+    }
+  }
+}
