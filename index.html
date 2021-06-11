@@ -43,41 +43,101 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="header">
-          <div class="left-header">
-            <div class="logo">
-              <img src="./assets/images/logo.png" alt="" />
-            </div>
-            <ul>
-              <li>
-                <a href="javascript:void(0)">
-                  <i class="fas fa-tags"></i>
-                  <span>Listings</span>
-                  <i class="fas fa-caret-down"></i>
-                </a>
-              </li>
-              <li>
-                <a href="/games">
-                  <i class="fas fa-gamepad"></i>
-                  <span>Games</span>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">
-                  <i class="fas fa-search"></i>
-                  <span>Search</span>
-                </a>
-              </li>
-            </ul>
+      <div class="header container">
+        <div class="left-header">
+          <div class="menu"><i class="fas fa-bars"></i></div>
+          <div class="logo">
+            <img src="./assets/images/logo.png" alt="" />
           </div>
-          <div class="right-header">
-            <div class="isLogin"></div>
-            <div class="isLogout">
-              <div class="signin"><i class="fa fa-sign-in"></i> Sign in</div>
-              <div class="signup">
-                <i class="fa fa-user-plus"></i>
+          <div class="ellipsis"><i class="fas fa-ellipsis-v"></i></div>
+          <ul>
+            <li class="close">
+              <a href="javascript:void(0)">
+                <i class="fas fa-times me-2"></i>
+                <span>Close</span>
+              </a>
+            </li>
+            <li class="list-nav">
+              <a href="javascript:void(0)">
+                <i class="fas fa-tags"></i>
+                <span>Listings</span>
+                <i class="fas fa-caret-down"></i>
+              </a>
+              <div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>Current Generation</p>
+                      <ul>
+                        <li><a href="#">All Listings</a></li>
+                        <li><a href="#">PlayStation 4</a></li>
+                        <li><a href="#">Xbox One</a></li>
+                        <li><a href="#">PC</a></li>
+                        <li><a href="#">Nintendo Switch</a></li>
+                        <li><a href="#">Wii U</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>REGION</p>
+                      <ul>
+                        <li><a href="#">Global</a></li>
+                        <li><a href="#">USA</a></li>
+                        <li><a href="#">EUROPE</a></li>
+                        <li><a href="#">ARGENTINA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>PRICE</p>
+                      <ul>
+                        <li><a href="#">1€</a></li>
+                        <li><a href="#">5€</a></li>
+                        <li><a href="#">10€</a></li>
+                        <li><a href="#">20€</a></li>
+                        <li><a href="#">30€</a></li>
+                        <li><a href="#">40€</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>GENRE</p>
+                      <ul>
+                        <li><a href="#">Football</a></li>
+                        <li><a href="#">First-Person Shooter</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Role-Playing</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Strategy</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </li>
+            <li>
+              <a href="/games">
+                <i class="fas fa-gamepad"></i>
+                <span>Games</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-header">
+          <div class="isLogin"></div>
+          <div class="isLogout">
+            <div class="signin"><i class="fa fa-sign-in"></i> Sign in</div>
+            <div class="signup">
+              <i class="fa fa-user-plus"></i>
             </div>
           </div>
         </div>
@@ -87,7 +147,10 @@
       <div class="container">
         <div class="gradient"></div>
         <div class="hero-wrapper">
-          <h1>Start to <strong>Sell</strong> your favourite video games!</h1>
+          <h1>
+            Start to <strong class="flip">Sell</strong> your favourite video
+            games!
+          </h1>
           <div class="search">
             <i class="fas fa-search"></i>
             <input
@@ -98,88 +161,98 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="slider">
-      <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="./game-view.html" class="game-slide">
-              <div>
-                <img src="./assets/images/games/game-1.jpg" alt="" />
+      <div class="slider">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="./game-view.html" class="game-slide">
                 <div>
-                  <span class="platform-label" style="background-color: #000000"
-                    >Pc</span
-                  >
-                  <div class="game-title">Until We Die</div>
-                  <small>No listing available.</small>
+                  <img src="./assets/images/games/game-1.jpg" alt="" />
+                  <div>
+                    <span
+                      class="platform-label"
+                      style="background-color: #000000"
+                      >Pc</span
+                    >
+                    <div class="game-title">Until We Die</div>
+                    <small>No listing available.</small>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="./game-view.html" class="game-slide">
-              <div>
-                <img src="./assets/images/games/game-2.jpg" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./game-view.html" class="game-slide">
                 <div>
-                  <span class="platform-label" style="background-color: #000000"
-                    >Pc</span
-                  >
-                  <div class="game-title">TinShift</div>
-                  <small>Starting from <strong>€ 10,00</strong>!</small>
+                  <img src="./assets/images/games/game-2.jpg" alt="" />
+                  <div>
+                    <span
+                      class="platform-label"
+                      style="background-color: #000000"
+                      >Pc</span
+                    >
+                    <div class="game-title">TinShift</div>
+                    <small>Starting from <strong>€ 10,00</strong>!</small>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="./game-view.html" class="game-slide">
-              <div>
-                <span class="realise-date"
-                  ><i class="fas fa-clock"></i> Release in 14 days</span
-                >
-                <img src="./assets/images/games/game-3.jpg" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./game-view.html" class="game-slide">
                 <div>
-                  <span class="platform-label" style="background-color: #107c10"
-                    >Xbox One</span
+                  <span class="realise-date"
+                    ><i class="fas fa-clock"></i> Release in 14 days</span
                   >
-                  <div class="game-title">Scarlet Nexus</div>
-                  <small>No listing available.</small>
+                  <img src="./assets/images/games/game-3.jpg" alt="" />
+                  <div>
+                    <span
+                      class="platform-label"
+                      style="background-color: #107c10"
+                      >Xbox One</span
+                    >
+                    <div class="game-title">Scarlet Nexus</div>
+                    <small>No listing available.</small>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="./game-view.html" class="game-slide">
-              <div>
-                <span class="realise-date"
-                  ><i class="fas fa-clock"></i> Release in 14 days</span
-                >
-                <img src="./assets/images/games/game-4.jpg" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./game-view.html" class="game-slide">
                 <div>
-                  <span class="platform-label" style="background-color: #073786"
-                    >PlayStation 5</span
+                  <span class="realise-date"
+                    ><i class="fas fa-clock"></i> Release in 14 days</span
                   >
-                  <div class="game-title">Scarlet Nexus</div>
-                  <small>Starting from <strong>€ 20,00</strong>!</small>
+                  <img src="./assets/images/games/game-4.jpg" alt="" />
+                  <div>
+                    <span
+                      class="platform-label"
+                      style="background-color: #073786"
+                      >PlayStation 5</span
+                    >
+                    <div class="game-title">Scarlet Nexus</div>
+                    <small>Starting from <strong>€ 20,00</strong>!</small>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="./game-view.html" class="game-slide">
-              <div>
-                <span class="realise-date"
-                  ><i class="fas fa-clock"></i> Release in 14 days</span
-                >
-                <img src="./assets/images/games/game-5.jpg" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./game-view.html" class="game-slide">
                 <div>
-                  <span class="platform-label" style="background-color: #073786"
-                    >PlayStation 5</span
+                  <span class="realise-date"
+                    ><i class="fas fa-clock"></i> Release in 14 days</span
                   >
-                  <div class="game-title">Guilty Gear -Strive-</div>
-                  <small>Starting from <strong>€ 10,00</strong>!</small>
+                  <img src="./assets/images/games/game-5.jpg" alt="" />
+                  <div>
+                    <span
+                      class="platform-label"
+                      style="background-color: #073786"
+                      >PlayStation 5</span
+                    >
+                    <div class="game-title">Guilty Gear -Strive-</div>
+                    <small>Starting from <strong>€ 10,00</strong>!</small>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -460,7 +533,7 @@
     <section style="position: relative">
       <div class="bg-image"></div>
       <div class="container">
-        <div class="page-title">
+        <div class="page-title pt-5">
           <h4>
             <a href="./listing.html"
               ><i class="fas fa-tags"></i> popular games
@@ -471,7 +544,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container mb-5">
         <div class="listings">
           <div class="row">
             <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
@@ -752,7 +825,7 @@
 
     <script>
       const swiper = new Swiper('.mySwiper', {
-        slidesPerView: 4.5,
+        slidesPerView: 5,
         spaceBetween: 30,
         loop: true,
         autoplay: true,
@@ -760,15 +833,89 @@
           el: '.swiper-pagination',
           clickable: true,
         },
+        breakpoints: {
+          0: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+          },
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+          1198: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
       })
 
+      //change header background color
       const header = document.querySelector('header')
       window.addEventListener('scroll', (e) => {
-        console.log(e.target.scrollingElement.scrollTop)
         if (e.target.scrollingElement.scrollTop > 200)
           header.classList.add('bg-dark')
         else header.classList.remove('bg-dark')
       })
+
+      //header functions
+      const ellipsis = document.querySelector('.ellipsis')
+      const rightHeader = document.querySelector('.right-header')
+      ellipsis.addEventListener('click', () =>
+        rightHeader.classList.toggle('active')
+      )
+
+      // set auto slide height
+      const gameSlidesImages = document.querySelectorAll('.game-slide img')
+      const gameSlide = document.querySelector('.swiper-slide')
+      const events = ['resize', 'DOMContentLoaded']
+      events.forEach((event) => {
+        window.addEventListener(event, () => {
+          const width = (300 / 500) * gameSlide.style.width.split('px')[0]
+          gameSlidesImages.forEach((img) => (img.style.height = width + 'px'))
+        })
+      })
+
+      //Sidebar functionality
+      const menu = document.querySelector('.menu')
+      const close = document.querySelector('.close')
+      const sidebar = document.querySelector('.left-header ul')
+      const listingBtn = document.querySelector('.list-nav')
+      const listingSub = document.querySelector('.list-nav > div')
+      menu.addEventListener('click', () => {
+        sidebar.classList.add('active')
+      })
+      close.addEventListener('click', () => {
+        sidebar.classList.remove('active')
+      })
+      listingBtn.addEventListener('click', () => {
+        const height = listingSub.clientHeight
+        const scrollHeight = listingSub.scrollHeight
+        if (height === 0) {
+          listingSub.style.height = scrollHeight + 'px'
+        } else listingSub.style.height = 0
+      })
+
+      //flipping animation
+      const words = ['buy', 'trade', 'sell']
+      let count = 0
+      const flip = document.querySelector('.flip')
+      setInterval(() => {
+        flip.style.transform = 'rotateX(-90deg)'
+      }, 500)
+      setInterval(() => {
+        flip.style.transform = 'rotateX(0deg)'
+        flip.innerHTML = words[count]
+        count++
+        if (count === words.length) count = 0
+      }, 1000)
     </script>
   </body>
 </html>

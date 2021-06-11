@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(../images/hero-banner.jpg);
+  background-image: url(../images/game-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -7,7 +7,7 @@
   .gradient {
     background: linear-gradient(
       0deg,
-      $dark 5%,
+      $darkBody 5%,
       transparentize($color: $dark, $amount: 0.45) 50%
     );
     position: absolute;
@@ -25,6 +25,10 @@
     min-height: 450px;
     position: relative;
     z-index: 11;
+    .flip {
+      display: inline-block;
+      transition: 0.1s ease-in-out;
+    }
     @media screen and (max-width: 991.98px) {
       height: 500px;
       min-height: unset;
@@ -52,7 +56,10 @@
       width: 100%;
       border-radius: 2rem;
       padding-left: 3rem;
-      @media screen and (max-width: 575.98px) {
+      @media screen and (max-width: 767.98px) {
+        min-width: 400px;
+      }
+      @media screen and (max-width: 565.98px) {
         min-width: unset;
       }
     }

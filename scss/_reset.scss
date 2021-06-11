@@ -29,6 +29,7 @@ strong {
   margin: 2rem 0;
   h4 {
     font-weight: 700;
+    margin-bottom: 0;
     a {
       text-transform: capitalize;
       color: $white;
@@ -84,7 +85,7 @@ strong {
       rgba(27, 27, 27, 0.8) 30%,
       rgba(27, 27, 27, 0.5) 100%
     ),
-    url(../images/game_pattern_white.png);
+    url(../images/game-icons-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 260px;
@@ -93,9 +94,6 @@ strong {
   left: 0;
   top: 0;
   z-index: -1;
-}
-section {
-  padding: 2rem 0;
 }
 .bg-dark {
   background-color: $dark !important;
