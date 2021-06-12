@@ -1,0 +1,29 @@
+.page-pagination {
+  display: flex;
+  justify-content: space-between;
+  background: $dark;
+  align-items: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  .prev,
+  .next,
+  span {
+    height: 2.3rem;
+    width: 2.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover,
+    &.active {
+      color: $white;
+      background: lighten($color: $mutedBlack, $amount: 10);
+    }
+  }
+  .pages {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+  }
+}

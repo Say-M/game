@@ -11,6 +11,7 @@ header {
   align-items: center;
   padding: 1rem 0;
   font-weight: 500;
+  position: relative;
   &.container {
     @media screen and(max-width: 767.98px) {
       width: 100%;
@@ -24,6 +25,39 @@ header {
     align-items: start;
     padding: 0;
   }
+  .search-box {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    transition: 0.3s ease-in-out;
+    width: calc(100% - 12rem);
+    z-index: 1111;
+    height: 100%;
+    &.active {
+      top: 0;
+    }
+    @media screen and(max-width: 767.98px) {
+      width: 100%;
+    }
+    input {
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 1rem;
+      font-size: 1.3rem;
+      background: $mutedBlack;
+      color: $white;
+      padding-right: 2.5rem;
+    }
+    i {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  }
   .left-header {
     display: flex;
     align-items: center;
@@ -32,10 +66,13 @@ header {
       cursor: pointer;
       display: none;
     }
+    i {
+      color: $white;
+    }
     @media screen and(max-width: 767.98px) {
       justify-content: space-between;
       width: 100%;
-      padding: 0.5rem 1rem;
+      padding: 1rem;
       background: $dark;
       position: relative;
       z-index: 111;
@@ -71,7 +108,9 @@ header {
       }
       & > li {
         &:last-child {
-          display: none;
+          @media screen and(max-width: 767.98px) {
+            display: none;
+          }
         }
         & > a {
           background: $dark;
@@ -193,9 +232,10 @@ header {
   }
   .right-header {
     @media screen and(max-width: 767.98px) {
-      padding: 0.5rem 1rem;
+      padding: 1rem;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: center;
       width: 100%;
       background: $mutedBlack;
       border-top: 1px solid transparentize($color: $white, $amount: 0.8);
@@ -204,7 +244,17 @@ header {
       top: 0;
       transition: 0.2s;
       &.active {
-        top: 3.1rem;
+        top: 4.4rem;
+      }
+    }
+    i {
+      color: $white;
+    }
+    .search-btn {
+      display: none;
+      @media screen and(max-width: 767.98px) {
+        display: block;
+        cursor: pointer;
       }
     }
     .isLogout {

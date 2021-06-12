@@ -1,4 +1,4 @@
-footer {
+footer.one {
   background: $dark;
   padding: 2rem 0;
   .footer-item {
@@ -9,8 +9,17 @@ footer {
       }
     }
     h5 {
-      font-weight: 700;
+      font-weight: 400;
+      font-size: 1rem;
       margin-bottom: 1rem;
+    }
+    ul.social {
+      li {
+        text-align: center;
+        a {
+          margin: 0.5rem;
+        }
+      }
     }
     ul {
       list-style: none;
@@ -20,6 +29,7 @@ footer {
         a {
           display: inline-block;
           margin-bottom: 0.5rem;
+          font-size: 0.75rem;
           text-decoration: none;
           color: $fontColor;
           text-transform: capitalize;
@@ -33,5 +43,101 @@ footer {
         }
       }
     }
+  }
+  .footer-bottom {
+    padding-top: 1rem;
+    border-top: 1px solid transparentize($color: $white, $amount: 0.8);
+    font-size: 0.75rem;
+    .links {
+      margin-bottom: 0.5rem;
+      a {
+        text-decoration: none;
+        color: $fontColor;
+        text-transform: capitalize;
+        margin-right: 1rem;
+        padding-right: 1rem;
+        border-right: 1px solid transparentize($color: $white, $amount: 0.8);
+        &:last-child {
+          border-right: none;
+          margin-right: 0;
+          padding-right: 0;
+        }
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+footer.two {
+  background: $dark;
+  .platforms {
+    border-bottom: 1px solid transparentize($color: $white, $amount: 0.95);
+    a {
+      text-decoration: none;
+      text-transform: capitalize;
+      color: darken($color: $fontColor, $amount: 20);
+      transition: 0.2s;
+      display: block;
+      &:hover {
+        color: $white;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        height: 90px;
+        width: 100%;
+      }
+    }
+  }
+  .side-footer {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .links {
+      a {
+        color: $fontColor;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 2rem;
+        background: lighten($color: $dark, $amount: 3);
+        font-weight: 700;
+        font-size: 0.875rem;
+        padding: 0.2rem 1rem;
+        margin-right: 0.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+    & > div:not(.links) {
+      display: flex;
+      align-items: center;
+      select {
+        &:last-child {
+          margin-left: 1rem;
+        }
+        border-radius: 2rem;
+        background: lighten($color: $darkBody, $amount: 10)
+          url('../images/arrow-down.png') no-repeat center right !important;
+        border: none;
+        color: $white;
+        &:focus,
+        &:active {
+          border: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .copyright {
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem 1rem 0 0;
+    p {
+      font-size: 0.875rem;
+    }
+    background: lighten($color: $dark, $amount: 3);
   }
 }

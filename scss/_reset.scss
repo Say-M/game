@@ -17,6 +17,7 @@ body {
   color: $fontColor;
   font-size: 1rem;
   font-family: $roboto;
+  // overflow-x: hidden;
 }
 b,
 strong {
@@ -97,4 +98,75 @@ strong {
 }
 .bg-dark {
   background-color: $dark !important;
+}
+.modal-content {
+  background: $dark;
+  border: none;
+}
+.modal-header {
+  border: none;
+  background: lighten($color: $mutedBlack, $amount: 3)
+    url(../images/game_pattern_white.png);
+  background-size: cover;
+  color: $white;
+}
+.modal-separator {
+  padding: 0.625rem 1.25rem;
+  background-color: lighten($color: $darkBody, $amount: 6);
+  // background: $darkBody;
+  color: #fff;
+  font-size: 1rem;
+}
+.modal-footer {
+  border: none;
+  background: $mutedBlack;
+}
+.btn-close {
+  width: 0.5rem;
+  height: 0.5rem;
+  fill: $white;
+  background: transparent
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill='white' d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
+    center/1em auto no-repeat;
+}
+.btn {
+  border: none;
+  box-shadow: none;
+  &:focus,
+  &:active {
+    border: none;
+    box-shadow: none;
+  }
+}
+.btn-green {
+  background: $green;
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+.btn-animation {
+  overflow: hidden;
+  position: relative;
+  .icon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease-in-out;
+    top: -100%;
+    font-size: 1.4rem;
+  }
+  .text {
+    position: relative;
+    transition: 0.3s ease-in-out;
+    bottom: 0;
+  }
+  &:hover {
+    .icon {
+      top: 50%;
+    }
+    .text {
+      bottom: -2rem;
+    }
+  }
 }

@@ -38,17 +38,23 @@
     />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- custom script-->
+    <script src="./assets/scripts/app.js" defer></script>
     <!-- custom styling -->
     <link rel="stylesheet" href="./assets/css/main.min.css" />
   </head>
   <body>
     <header>
       <div class="header container">
+        <div class="search-box">
+          <input type="text" placeholder="search..." />
+          <i class="fas fa-times close-search-btn"></i>
+        </div>
         <div class="left-header">
           <div class="menu"><i class="fas fa-bars"></i></div>
-          <div class="logo">
+          <a href="/" class="logo">
             <img src="./assets/images/logo.png" alt="" />
-          </div>
+          </a>
           <div class="ellipsis"><i class="fas fa-ellipsis-v"></i></div>
           <ul>
             <li class="close">
@@ -125,7 +131,7 @@
               </a>
             </li>
             <li>
-              <a href="javascript:void(0)">
+              <a href="javascript:void(0)" class="search-btn">
                 <i class="fas fa-search"></i>
                 <span>Search</span>
               </a>
@@ -133,7 +139,8 @@
           </ul>
         </div>
         <div class="right-header">
-          <div class="isLogin"></div>
+          <div class="search-btn"><i class="fas fa-search"></i></div>
+          <!-- <div class="isLogin"></div> -->
           <div class="isLogout">
             <div class="signin"><i class="fa fa-sign-in"></i> Sign in</div>
             <div class="signup">
@@ -278,7 +285,8 @@
                 <a href="#">
                   <div class="payment-enabled">
                     <span><i class="fas fa-shield-alt"></i></span>
-                    <span><i class="fas fa-globe-asia"></i></span>
+                    <span><img src="./assets/images/globe.png" alt="" /></span>
+                    <span>A</span>
                     <span><i class="fas fa-key"></i></span>
                   </div>
                   <div>
@@ -303,7 +311,8 @@
                 <a href="#">
                   <div class="payment-enabled">
                     <span><i class="fas fa-shield-alt"></i></span>
-                    <span><i class="fas fa-globe-asia"></i></span>
+                    <span><img src="./assets/images/globe.png" alt="" /></span>
+                    <span>A</span>
                     <span><i class="fas fa-key"></i></span>
                   </div>
                   <div>
@@ -328,7 +337,8 @@
                 <a href="#">
                   <div class="payment-enabled">
                     <span><i class="fas fa-shield-alt"></i></span>
-                    <span><i class="fas fa-globe-asia"></i></span>
+                    <span><img src="./assets/images/globe.png" alt="" /></span>
+                    <span>A</span>
                     <span><i class="fas fa-key"></i></span>
                   </div>
                   <div>
@@ -353,7 +363,8 @@
                 <a href="#">
                   <div class="payment-enabled">
                     <span><i class="fas fa-shield-alt"></i></span>
-                    <span><i class="fas fa-globe-asia"></i></span>
+                    <span><img src="./assets/images/globe.png" alt="" /></span>
+                    <span>A</span>
                     <span><i class="fas fa-key"></i></span>
                   </div>
                   <div>
@@ -378,7 +389,8 @@
                 <a href="#">
                   <div class="payment-enabled">
                     <span><i class="fas fa-shield-alt"></i></span>
-                    <span><i class="fas fa-globe-asia"></i></span>
+                    <span><img src="./assets/images/globe.png" alt="" /></span>
+                    <span>A</span>
                     <span><i class="fas fa-key"></i></span>
                   </div>
                   <div>
@@ -403,7 +415,8 @@
                 <a href="#">
                   <div class="payment-enabled">
                     <span><i class="fas fa-shield-alt"></i></span>
-                    <span><i class="fas fa-globe-asia"></i></span>
+                    <span><img src="./assets/images/globe.png" alt="" /></span>
+                    <span>A</span>
                     <span><i class="fas fa-key"></i></span>
                   </div>
                   <div>
@@ -428,7 +441,8 @@
                 <a href="#">
                   <div class="payment-enabled">
                     <span><i class="fas fa-shield-alt"></i></span>
-                    <span><i class="fas fa-globe-asia"></i></span>
+                    <span><img src="./assets/images/globe.png" alt="" /></span>
+                    <span>A</span>
                     <span><i class="fas fa-key"></i></span>
                   </div>
                   <div>
@@ -453,7 +467,8 @@
                 <a href="#">
                   <div class="payment-enabled">
                     <span><i class="fas fa-shield-alt"></i></span>
-                    <span><i class="fas fa-globe-asia"></i></span>
+                    <span><img src="./assets/images/globe.png" alt="" /></span>
+                    <span>A</span>
                     <span><i class="fas fa-key"></i></span>
                   </div>
                   <div>
@@ -478,7 +493,8 @@
                 <a href="#">
                   <div class="payment-enabled">
                     <span><i class="fas fa-shield-alt"></i></span>
-                    <span><i class="fas fa-globe-asia"></i></span>
+                    <span><img src="./assets/images/globe.png" alt="" /></span>
+                    <span>A</span>
                     <span><i class="fas fa-key"></i></span>
                   </div>
                   <div>
@@ -503,7 +519,8 @@
                 <a href="#">
                   <div class="payment-enabled">
                     <span><i class="fas fa-shield-alt"></i></span>
-                    <span><i class="fas fa-globe-asia"></i></span>
+                    <span><img src="./assets/images/globe.png" alt="" /></span>
+                    <span>A</span>
                     <span><i class="fas fa-key"></i></span>
                   </div>
                   <div>
@@ -734,26 +751,26 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="one">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-4">
             <div class="footer-item">
               <a href="/" class="logo mb-4 d-inline-block">
                 <img src="./assets/images/logo.png" alt="" />
               </a>
               <p>Our Mobile Apps</p>
               <div class="d-flex">
-                <div class="w-50">
+                <div class="me-2">
                   <img
-                    style="width: 90%"
+                    class="img-fluid"
                     src="./assets/images/download-apple.png"
                     alt=""
                   />
                 </div>
-                <div class="w-50">
+                <div class="ms-2">
                   <img
-                    style="width: 90%"
+                    class="img-fluid"
                     src="./assets/images/download-google.png"
                     alt=""
                   />
@@ -761,7 +778,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-6 col-md-3 col-lg-2">
             <div class="footer-item">
               <h5>Sell</h5>
               <ul>
@@ -773,7 +790,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-6 col-md-3 col-lg-2">
             <div class="footer-item">
               <h5>Buy</h5>
               <ul>
@@ -785,7 +802,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-6 col-md-3 col-lg-2">
             <div class="footer-item">
               <h5>Resources</h5>
               <ul>
@@ -797,25 +814,39 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-6 col-md-3 col-lg-2">
             <div class="footer-item">
               <h5>Join our Community</h5>
               <ul class="social">
                 <li>
                   <a href="#"><i class="fab fa-discord"></i></a>
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+              </ul>
+              <ul class="social">
+                <li>
                   <a href="#"><i class="fab fa-twitter"></i></a>
                   <a href="#"><i class="fab fa-instagram"></i></a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-9">
-            <div class="footer-item">
+        </div>
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="links">
+                <a href="#">About us</a>
+                <a href="#">Terms of use</a>
+                <a href="#">Privacy policy</a>
+              </div>
+              <p>Copyright &copy; 2021 ijji, Inc. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
               <img
                 src="./assets/images/icon_payment_logos.png"
-                class="img-fluid"
                 alt=""
+                class="img-fluid"
               />
             </div>
           </div>
@@ -836,72 +867,37 @@
         breakpoints: {
           0: {
             slidesPerView: 1.5,
-            spaceBetween: 10,
+            spaceBetween: 15,
           },
           576: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 2.5,
+            spaceBetween: 15,
           },
           768: {
             slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 15,
           },
           992: {
             slidesPerView: 4,
-            spaceBetween: 50,
+            spaceBetween: 15,
           },
           1198: {
             slidesPerView: 5,
-            spaceBetween: 50,
+            spaceBetween: 15,
           },
         },
       })
 
-      //change header background color
-      const header = document.querySelector('header')
-      window.addEventListener('scroll', (e) => {
-        if (e.target.scrollingElement.scrollTop > 200)
-          header.classList.add('bg-dark')
-        else header.classList.remove('bg-dark')
-      })
-
-      //header functions
-      const ellipsis = document.querySelector('.ellipsis')
-      const rightHeader = document.querySelector('.right-header')
-      ellipsis.addEventListener('click', () =>
-        rightHeader.classList.toggle('active')
-      )
-
       // set auto slide height
-      const gameSlidesImages = document.querySelectorAll('.game-slide img')
-      const gameSlide = document.querySelector('.swiper-slide')
-      const events = ['resize', 'DOMContentLoaded']
-      events.forEach((event) => {
-        window.addEventListener(event, () => {
-          const width = (300 / 500) * gameSlide.style.width.split('px')[0]
-          gameSlidesImages.forEach((img) => (img.style.height = width + 'px'))
-        })
-      })
-
-      //Sidebar functionality
-      const menu = document.querySelector('.menu')
-      const close = document.querySelector('.close')
-      const sidebar = document.querySelector('.left-header ul')
-      const listingBtn = document.querySelector('.list-nav')
-      const listingSub = document.querySelector('.list-nav > div')
-      menu.addEventListener('click', () => {
-        sidebar.classList.add('active')
-      })
-      close.addEventListener('click', () => {
-        sidebar.classList.remove('active')
-      })
-      listingBtn.addEventListener('click', () => {
-        const height = listingSub.clientHeight
-        const scrollHeight = listingSub.scrollHeight
-        if (height === 0) {
-          listingSub.style.height = scrollHeight + 'px'
-        } else listingSub.style.height = 0
-      })
+      // const gameSlidesImages = document.querySelectorAll('.game-slide img')
+      // const gameSlide = document.querySelector('.swiper-slide')
+      // const events = ['resize', 'DOMContentLoaded']
+      // events.forEach((event) => {
+      //   window.addEventListener(event, () => {
+      //     const width = (300 / 500) * gameSlide.style.width.split('px')[0]
+      //     gameSlidesImages.forEach((img) => (img.style.height = width + 'px'))
+      //   })
+      // })
 
       //flipping animation
       const words = ['buy', 'trade', 'sell']
