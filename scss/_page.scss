@@ -1,0 +1,27 @@
+.page-header {
+  background: linear-gradient(
+      to right,
+      rgba(0, 216, 255, 0.3),
+      rgba(255, 90, 0, 0.3)
+    ),
+    url(../images/game-icons-bg.jpg);
+  background-size: cover;
+  padding: 2rem 0;
+  h3 {
+    margin-bottom: 0;
+    font-weight: 700;
+    color: $white;
+  }
+}
+.page-body {
+  margin: 2rem 0;
+  .inner-body {
+    background: $dark;
+    padding: 1rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    h3 {
+      color: $white;
+    }
+  }
+}

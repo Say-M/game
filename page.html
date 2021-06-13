@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Page</title>
+
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"
+      integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom script-->
+    <script src="./assets/scripts/app.js" defer></script>
+    <!-- custom styling -->
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <div class="search-box">
+          <input type="text" placeholder="search..." />
+          <i class="fas fa-times close-search-btn"></i>
+        </div>
+        <div class="left-header">
+          <div class="menu"><i class="fas fa-bars"></i></div>
+          <a href="/" class="logo">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+          <div class="ellipsis"><i class="fas fa-ellipsis-v"></i></div>
+          <ul>
+            <li class="close">
+              <a href="javascript:void(0)">
+                <i class="fas fa-times me-2"></i>
+                <span>Close</span>
+              </a>
+            </li>
+            <li class="list-nav">
+              <a href="javascript:void(0)">
+                <i class="fas fa-tags"></i>
+                <span>Listings</span>
+                <i class="fas fa-caret-down"></i>
+              </a>
+              <div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>Current Generation</p>
+                      <ul>
+                        <li><a href="./listing.html">All Listings</a></li>
+                        <li><a href="./listing.html">PlayStation 4</a></li>
+                        <li><a href="./listing.html">Xbox One</a></li>
+                        <li><a href="./listing.html">PC</a></li>
+                        <li><a href="./listing.html">Nintendo Switch</a></li>
+                        <li><a href="./listing.html">Wii U</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>REGION</p>
+                      <ul>
+                        <li><a href="./listing.html">Global</a></li>
+                        <li><a href="./listing.html">USA</a></li>
+                        <li><a href="./listing.html">EUROPE</a></li>
+                        <li><a href="./listing.html">ARGENTINA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>PRICE</p>
+                      <ul>
+                        <li><a href="./listing.html">1€</a></li>
+                        <li><a href="./listing.html">5€</a></li>
+                        <li><a href="./listing.html">10€</a></li>
+                        <li><a href="./listing.html">20€</a></li>
+                        <li><a href="./listing.html">30€</a></li>
+                        <li><a href="./listing.html">40€</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>GENRE</p>
+                      <ul>
+                        <li><a href="./listing.html">Football</a></li>
+                        <li>
+                          <a href="./listing.html">First-Person Shooter</a>
+                        </li>
+                        <li><a href="./listing.html">Action</a></li>
+                        <li><a href="./listing.html">Role-Playing</a></li>
+                        <li><a href="./listing.html">Sports</a></li>
+                        <li><a href="./listing.html">Strategy</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="/games">
+                <i class="fas fa-gamepad"></i>
+                <span>Games</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="search-btn">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-header">
+          <div class="search-btn"><i class="fas fa-search"></i></div>
+          <!-- <div class="isLogin"></div> -->
+          <div class="isLogout">
+            <div class="signin" data-bs-toggle="modal" data-bs-target="#signin">
+              <i class="fas fa-sign-in-alt"></i> Sign in
+            </div>
+            <div class="signup" data-bs-toggle="modal" data-bs-target="#create">
+              <i class="fa fa-user-plus"></i>
+            </div>
+          </div>
+        </div>
+        <!-- sign in modal  -->
+        <div class="modal fade" id="signin" tabindex="-1">
+          <div class="modal-dialog modal-login">
+            <div class="modal-content">
+              <div class="modal-bg"></div>
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  <i class="fas fa-sign-in-alt me-2"></i> Sign in
+                </h5>
+                <div class="d-flex flex-row-reverse align-items-center">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <button
+                    class="btn btn-sm btn-warning float-end me-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#create"
+                    data-bs-dismiss="modal"
+                  >
+                    <i class="fas fa-user-plus mr-2"></i> Create account
+                  </button>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="p-3 mb-3">
+                      <img
+                        src="./assets/images/logo.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="social-btn steam">
+                        <span class="icon"><i class="fab fa-steam"></i></span>
+                        <span>Sign in with stream</span>
+                      </div>
+                      <div class="social-btn twitter">
+                        <span class="icon"><i class="fab fa-twitter"></i></span>
+                        <span>Sign in with twitter</span>
+                      </div>
+                      <div class="social-btn facebook">
+                        <span class="icon"
+                          ><i class="fab fa-facebook-f"></i
+                        ></span>
+                        <span>Sign in with facebook</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <form action="#" class="p-3 mb-3">
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-envelope"></i
+                        ></span>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email Address"
+                        />
+                      </div>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-unlock"></i
+                        ></span>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div class="form-check mb-2">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="remember"
+                        />
+                        <label class="form-check-label" for="remember">
+                          Remember Me
+                        </label>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-animation btn-sm btn-green w-100 mb-2"
+                      >
+                        <span class="icon"
+                          ><i class="fas fa-sign-in-alt"></i
+                        ></span>
+                        <span class="text">Sign in</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-sm w-100"
+                      >
+                        Forgot your password
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- create account modal -->
+        <div class="modal fade" id="create" tabindex="-1">
+          <div class="modal-dialog modal-create">
+            <div class="modal-content">
+              <div class="modal-bg"></div>
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  <i class="fas fa-sign-in-alt me-2"></i> Sign in
+                </h5>
+                <div class="d-flex flex-row-reverse align-items-center">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <button
+                    class="btn btn-sm btn-warning float-end me-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signin"
+                    data-bs-dismiss="modal"
+                  >
+                    <i class="fas fa-sign-in-alt mr-2"></i> Sign in
+                  </button>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-sm-6">
+                    <form action="#" class="p-3 mb-3">
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-user"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Username"
+                        />
+                      </div>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-envelope"></i
+                        ></span>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email Address"
+                        />
+                      </div>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-unlock"></i
+                        ></span>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-exchange-alt"></i
+                        ></span>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Confirm password"
+                        />
+                      </div>
+                      <div class="form-check mb-2">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="remember"
+                        />
+                        <label class="form-check-label" for="remember">
+                          Remember Me
+                        </label>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-animation btn-sm btn-green w-100 mb-2"
+                      >
+                        <span class="icon"
+                          ><i class="fas fa-sign-in-alt"></i
+                        ></span>
+                        <span class="text">Sign in</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-sm w-100"
+                      >
+                        Forgot your password
+                      </button>
+                    </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="p-3 mb-3">
+                      <img
+                        src="./assets/images/logo.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="social-btn steam">
+                        <span class="icon"><i class="fab fa-steam"></i></span>
+                        <span>Sign in with stream</span>
+                      </div>
+                      <div class="social-btn twitter">
+                        <span class="icon"><i class="fab fa-twitter"></i></span>
+                        <span>Sign in with twitter</span>
+                      </div>
+                      <div class="social-btn facebook">
+                        <span class="icon"
+                          ><i class="fab fa-facebook-f"></i
+                        ></span>
+                        <span>Sign in with facebook</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-header">
+      <div class="container">
+        <h3>Terms and condition</h3>
+      </div>
+    </div>
+    <div class="page-body">
+      <div class="container">
+        <div class="inner-body">
+          <p>
+            These Terms of Service (“Terms”, “Terms of Service”) govern your use
+            of our website located at vbrae.com (together or individually
+            “Service”) operated by vbrae.com.<br /><br />Our
+            <a
+              href="https://staging.vbrae.com/page/Privacy%20Policy"
+              target="_blank"
+              >Privacy Policy</a
+            >
+            also governs your use of our Service and explains how we collect,
+            safeguard and disclose information that results from your use of our
+            web pages.<br /><br />Your agreement with us includes these Terms
+            and our
+            <a
+              href="https://staging.vbrae.com/page/Privacy%20Policy"
+              target="_blank"
+              >Privacy Policy</a
+            >
+            (“Agreements”). You acknowledge that you have read and understood
+            Agreements, and agree to be bound of them.<br /><br />If you do not
+            agree with (or cannot comply with) Agreements, then you may not use
+            the Service. These Terms apply to all visitors, users and others who
+            wish to access or use Service.<br /><br />
+          </p>
+          <h3>&nbsp;&nbsp;&nbsp; 2. Communications</h3>
+          <p>
+            <br />By using our Service, you agree to subscribe to newsletters,
+            marketing or promotional materials and other information we may
+            send. However, you may opt out of receiving any, or all, of these
+            communications from us by following the unsubscribe link.<br /><br />
+          </p>
+          <h3>&nbsp;&nbsp;&nbsp; 3. Purchases</h3>
+          <p>
+            <br />If you wish to purchase any product or service made available
+            through Service (“Purchase”),you may be asked to supply certain
+            information relevant to your Purchase.
+          </p>
+          <p>
+            <br />your credit or debit card number<br />the expiration date of
+            your card<br />your billing address<br />Your shipping
+            information.<br /><br />You represent and warrant that: (i) you have
+            the legal right to use any card(s) or other payment method(s) in
+            connection with any Purchase; and that (ii) the information you
+            supply to us is true, correct and complete.<br /><br />We may employ
+            the use of third party services for the purpose of facilitating
+            payment and the completion of Purchases. By submitting your
+            information, you grant us the right to provide the information to
+            these third parties subject to our
+            <a
+              href="https://staging.vbrae.com/page/Privacy%20Policy"
+              target="_blank"
+              >Privacy Policy</a
+            >.<br /><br />We reserve the right to refuse or cancel your order at
+            any time for reasons including but not limited to: product or
+            service availability, errors in the description or price of the
+            product or service, error in your order or other reasons.<br /><br />We
+            reserve the right to refuse or cancel your order if fraud or an
+            unauthorized or illegal transaction is suspected.<br /><br />
+          </p>
+          <h3>&nbsp;&nbsp;&nbsp; 4. Contests, Sweepstakes and Promotions</h3>
+          <p>
+            <br />Any contests, sweepstakes or other promotions (collectively,
+            “Promotions”) made available through Service may be governed by
+            rules that are separate from these Terms of Service. If you
+            participate in any Promotions, please review the applicable rules as
+            well as our Privacy Policy. If the rules for a Promotion conflict
+            with these Terms of Service, Promotion rules will apply.<br />&nbsp;&nbsp;
+            &nbsp;<br />
+          </p>
+          <h3>&nbsp;&nbsp;&nbsp; 5. Delivery</h3>
+          <p>
+            <br />We only allow Digital Keys!<br />No product is or will be
+            shipped cd/disc<br />All keys will be available on site.<br />vbrae.com
+            is not responsible to any loss of key in future.<br /><br />
+          </p>
+          <h3>&nbsp;&nbsp;&nbsp; 6. Content</h3>
+          <p>
+            <br />Our Service allows you to post, link, store,sell, share and
+            otherwise make available certain information, text, graphics,
+            videos, or other material (“Content”). You are responsible for
+            Content that you post on or through Service, including its legality,
+            reliability, and appropriateness.<br /><br />By posting Content on
+            or through Service, You represent and warrant that: (i) Content is
+            yours (you own it) and/or you have the right to use it and the right
+            to grant us the rights and license as provided in these Terms, and
+            (ii) that the posting of your Content on or through Service does not
+            violate the privacy rights, publicity rights, copyrights, contract
+            rights or any other rights of any person or entity. We reserve the
+            right to terminate the account of anyone found to be infringing on a
+            copyright.<br /><br />You retain any and all of your rights to any
+            Content you submit, post or display on or through Service and you
+            are responsible for protecting those rights. We take no
+            responsibility and assume no liability for Content you or any third
+            party posts on or through Service. However, by posting Content using
+            Service you grant us the right and license to use, modify, publicly
+            perform, publicly display, reproduce, and distribute such Content on
+            and through Service. You agree that this license includes the right
+            for us to make your Content available to other users of Service, who
+            may also use your Content subject to these Terms.<br /><br />vbrae.com
+            has the right but not the obligation to monitor and edit all Content
+            provided by users.<br /><br />In addition, Content found on or
+            through this Service are the property of vbrae.com or used with
+            permission. You may not distribute, modify, transmit, reuse,
+            download, repost, copy, or use said Content, whether in whole or in
+            part, for commercial purposes or for personal gain, without express
+            advance written permission from us.<br /><br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="two">
+      <div class="container-fluid platforms">
+        <div class="row">
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <span>PlayStation 3</span>
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <span>PC</span>
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <span>Xbox One</span>
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <span>PlayStation 4</span>
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <span>Nintendo Switch</span>
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <span>PlayStation 5</span>
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="side-footer">
+          <div class="links">
+            <a href="#">Terms and Condition</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+          </div>
+          <div>
+            <select class="form-select form-select-sm">
+              <option value="" disabled>Language</option>
+              <option value="English">English</option>
+              <option value="Bangle">Bangle</option>
+            </select>
+            <select class="form-select form-select-sm">
+              <option value="" disabled>Theme</option>
+              <option value="dark">Dark</option>
+              <option value="light">Light</option>
+            </select>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2021 GAMELOOF.COM</p>
+          <div class="text-end">
+            <img
+              src="./assets/images/icon_payment_logos.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

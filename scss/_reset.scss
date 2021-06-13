@@ -17,7 +17,7 @@ body {
   color: $fontColor;
   font-size: 1rem;
   font-family: $roboto;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 b,
 strong {
@@ -275,4 +275,11 @@ strong {
 }
 .btn-secondary {
   background: lighten($color: $mutedBlack, $amount: 15);
+}
+a {
+  color: $yellow;
+  text-decoration: none;
+  &:hover {
+    color: lighten($color: $yellow, $amount: 10);
+  }
 }
