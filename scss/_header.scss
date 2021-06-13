@@ -259,17 +259,20 @@ header {
     }
     .isLogout {
       display: flex;
+      font-size: 0.875rem;
       .signin {
         border-radius: 2rem 0 0 2rem;
         padding: 0.3rem 0.8rem;
-        background: $yellow;
+        background: $green;
         color: $white;
+        cursor: pointer;
       }
       .signup {
         border-radius: 0 2rem 2rem 0;
         padding: 0.3rem 0.8rem;
-        background: $green;
+        background: $yellow;
         color: $white;
+        cursor: pointer;
       }
     }
   }
