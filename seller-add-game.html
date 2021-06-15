@@ -31,12 +31,8 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- swiper js -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- ckeditor js -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/28.0.0/classic/ckeditor.js"></script>
 
     <!-- custom script-->
     <script src="./assets/scripts/app.js" defer></script>
@@ -388,122 +384,292 @@
     </header>
     <div class="page-header">
       <div class="container">
-        <h3>Terms and condition</h3>
+        <h3><i class="fas fa-gamepad me-2"></i>Add Game</h3>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#add_game"
+              type="button"
+              role="tab"
+            >
+              Add Game
+            </button>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="page-body">
+    <section class="game-overview">
       <div class="container">
-        <div class="inner-body">
-          <p>
-            These Terms of Service (“Terms”, “Terms of Service”) govern your use
-            of our website located at vbrae.com (together or individually
-            “Service”) operated by vbrae.com.<br /><br />Our
-            <a
-              href="https://staging.vbrae.com/page/Privacy%20Policy"
-              target="_blank"
-              >Privacy Policy</a
-            >
-            also governs your use of our Service and explains how we collect,
-            safeguard and disclose information that results from your use of our
-            web pages.<br /><br />Your agreement with us includes these Terms
-            and our
-            <a
-              href="https://staging.vbrae.com/page/Privacy%20Policy"
-              target="_blank"
-              >Privacy Policy</a
-            >
-            (“Agreements”). You acknowledge that you have read and understood
-            Agreements, and agree to be bound of them.<br /><br />If you do not
-            agree with (or cannot comply with) Agreements, then you may not use
-            the Service. These Terms apply to all visitors, users and others who
-            wish to access or use Service.<br /><br />
-          </p>
-          <h3>&nbsp;&nbsp;&nbsp; 2. Communications</h3>
-          <p>
-            <br />By using our Service, you agree to subscribe to newsletters,
-            marketing or promotional materials and other information we may
-            send. However, you may opt out of receiving any, or all, of these
-            communications from us by following the unsubscribe link.<br /><br />
-          </p>
-          <h3>&nbsp;&nbsp;&nbsp; 3. Purchases</h3>
-          <p>
-            <br />If you wish to purchase any product or service made available
-            through Service (“Purchase”),you may be asked to supply certain
-            information relevant to your Purchase.
-          </p>
-          <p>
-            <br />your credit or debit card number<br />the expiration date of
-            your card<br />your billing address<br />Your shipping
-            information.<br /><br />You represent and warrant that: (i) you have
-            the legal right to use any card(s) or other payment method(s) in
-            connection with any Purchase; and that (ii) the information you
-            supply to us is true, correct and complete.<br /><br />We may employ
-            the use of third party services for the purpose of facilitating
-            payment and the completion of Purchases. By submitting your
-            information, you grant us the right to provide the information to
-            these third parties subject to our
-            <a
-              href="https://staging.vbrae.com/page/Privacy%20Policy"
-              target="_blank"
-              >Privacy Policy</a
-            >.<br /><br />We reserve the right to refuse or cancel your order at
-            any time for reasons including but not limited to: product or
-            service availability, errors in the description or price of the
-            product or service, error in your order or other reasons.<br /><br />We
-            reserve the right to refuse or cancel your order if fraud or an
-            unauthorized or illegal transaction is suspected.<br /><br />
-          </p>
-          <h3>&nbsp;&nbsp;&nbsp; 4. Contests, Sweepstakes and Promotions</h3>
-          <p>
-            <br />Any contests, sweepstakes or other promotions (collectively,
-            “Promotions”) made available through Service may be governed by
-            rules that are separate from these Terms of Service. If you
-            participate in any Promotions, please review the applicable rules as
-            well as our Privacy Policy. If the rules for a Promotion conflict
-            with these Terms of Service, Promotion rules will apply.<br />&nbsp;&nbsp;
-            &nbsp;<br />
-          </p>
-          <h3>&nbsp;&nbsp;&nbsp; 5. Delivery</h3>
-          <p>
-            <br />We only allow Digital Keys!<br />No product is or will be
-            shipped cd/disc<br />All keys will be available on site.<br />vbrae.com
-            is not responsible to any loss of key in future.<br /><br />
-          </p>
-          <h3>&nbsp;&nbsp;&nbsp; 6. Content</h3>
-          <p>
-            <br />Our Service allows you to post, link, store,sell, share and
-            otherwise make available certain information, text, graphics,
-            videos, or other material (“Content”). You are responsible for
-            Content that you post on or through Service, including its legality,
-            reliability, and appropriateness.<br /><br />By posting Content on
-            or through Service, You represent and warrant that: (i) Content is
-            yours (you own it) and/or you have the right to use it and the right
-            to grant us the rights and license as provided in these Terms, and
-            (ii) that the posting of your Content on or through Service does not
-            violate the privacy rights, publicity rights, copyrights, contract
-            rights or any other rights of any person or entity. We reserve the
-            right to terminate the account of anyone found to be infringing on a
-            copyright.<br /><br />You retain any and all of your rights to any
-            Content you submit, post or display on or through Service and you
-            are responsible for protecting those rights. We take no
-            responsibility and assume no liability for Content you or any third
-            party posts on or through Service. However, by posting Content using
-            Service you grant us the right and license to use, modify, publicly
-            perform, publicly display, reproduce, and distribute such Content on
-            and through Service. You agree that this license includes the right
-            for us to make your Content available to other users of Service, who
-            may also use your Content subject to these Terms.<br /><br />vbrae.com
-            has the right but not the obligation to monitor and edit all Content
-            provided by users.<br /><br />In addition, Content found on or
-            through this Service are the property of vbrae.com or used with
-            permission. You may not distribute, modify, transmit, reuse,
-            download, repost, copy, or use said Content, whether in whole or in
-            part, for commercial purposes or for personal gain, without express
-            advance written permission from us.<br /><br />
-          </p>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="add_game"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <form action="#">
+              <div class="page-content">
+                <div class="content-header">
+                  <h5>Add Game Manual</h5>
+                </div>
+                <div class="content-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label for="game_name">Game name</label>
+                        <div class="input-group">
+                          <span
+                            class="input-group-text"
+                            style="padding: 0.375rem 0.75rem"
+                            ><i class="fas fa-edit"></i
+                          ></span>
+                          <input
+                            id="game_name"
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter the game name"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label for="platform">Game name</label>
+                        <div class="input-group">
+                          <span
+                            class="input-group-text"
+                            style="padding: 0.375rem 0.75rem"
+                            ><i class="fas fa-bullseye"></i
+                          ></span>
+                          <select id="platform" class="form-select">
+                            <option value="">Select Platform</option>
+                            <option value="1">PC</option>
+                            <option value="2">PlayStation 4</option>
+                            <option value="3">Xbox One</option>
+                            <option value="4">Nintendo Switch</option>
+                            <option value="5">Wii U</option>
+                            <option value="6">PlayStation 3</option>
+                            <option value="7">Xbox 360</option>
+                            <option value="8">Nintendo 3DS</option>
+                            <option value="9">PlayStation Vita</option>
+                            <option value="10">Nintendo DS</option>
+                            <option value="20">PlayStation 5</option>
+                            <option value="12">Xbox</option>
+                            <option value="13">PlayStation</option>
+                            <option value="21">Xbox Series</option>
+                            <option value="18">PlayStation Portable</option>
+                            <option value="22">Gift Card</option>
+                            <option value="23">Arcade</option>
+                            <option value="24">PlayStation 2</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label for="delivery">Select Delivery Type</label>
+                        <select id="delivery" class="form-select">
+                          <option value="Auto delivery">Auto delivery</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label for="region">Select Region</label>
+                        <select id="region" class="form-select">
+                          <option value="Global">Global</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <label id="game_key_input">Game Key</label>
+                      <div class="d-flex">
+                        <textarea
+                          class="form-control inline"
+                          rows="3"
+                          placeholder="1 Key/row"
+                          id="game_key_input"
+                        ></textarea>
+                        <div class="ms-3">
+                          <button
+                            class="btn btn-primary text-nowrap"
+                            type="button"
+                            id="add-key-btn"
+                          >
+                            Add key
+                          </button>
+                        </div>
+                      </div>
+                      <div class="keys-container">
+                        <div class="keys-container-placeholder">
+                          <i class="fas fa-key" style="margin-bottom: 20px"></i>
+                          <p>Added key will show up here</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my-3">
+                      <div id="editor"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label for="releas_date">Release date</label>
+                          <div class="input-group">
+                            <span
+                              class="input-group-text"
+                              style="padding: 0.375rem 0.75rem"
+                              ><i class="fas fa-calendar"></i
+                            ></span>
+                            <input
+                              id="releas_date"
+                              type="text"
+                              class="form-control"
+                              placeholder="Release date"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label for="publisher">Publisher</label>
+                          <div class="input-group">
+                            <span
+                              class="input-group-text"
+                              style="padding: 0.375rem 0.75rem"
+                              ><i class="fas fa-calendar"></i
+                            ></span>
+                            <input
+                              id="publisher"
+                              type="text"
+                              class="form-control"
+                              placeholder="Publisher (optional)"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="mb-4">
+                          <label for="developer">Developer</label>
+                          <div class="input-group">
+                            <span
+                              class="input-group-text"
+                              style="padding: 0.375rem 0.75rem"
+                              ><i class="fas fa-edit"></i
+                            ></span>
+                            <input
+                              id="developer"
+                              type="text"
+                              class="form-control"
+                              placeholder="Developer"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="mb-4">
+                          <label for="Genre">Genre</label>
+                          <div class="input-group">
+                            <span
+                              class="input-group-text"
+                              style="padding: 0.375rem 0.75rem"
+                              ><i class="fas fa-bullseye"></i
+                            ></span>
+                            <select id="Genre" class="form-select">
+                              <option value="Global">Global</option>
+                              <option value="1">Football</option>
+                              <option value="2">First-Person Shooter</option>
+                              <option value="3">Action</option>
+                              <option value="4">Role-Playing</option>
+                              <option value="5">Sports</option>
+                              <option value="6">Strategy</option>
+                              <option value="7">Snowboarding/Skiing</option>
+                              <option value="8">Simulation</option>
+                              <option value="9">Action-Adventure</option>
+                              <option value="10">Block-Breaking</option>
+                              <option value="11">Wrestling</option>
+                              <option value="12">Shooter</option>
+                              <option value="13">Platformer</option>
+                              <option value="14">Adventure</option>
+                              <option value="15">Soccer</option>
+                              <option value="16">Puzzle</option>
+                              <option value="17">Driving/Racing</option>
+                              <option value="18">Fighting</option>
+                              <option value="19">Trivia/Board Game</option>
+                              <option value="20">Minigame Collection</option>
+                              <option value="21">Golf</option>
+                              <option value="22">Compilation</option>
+                              <option value="23">Baseball</option>
+                              <option value="24">Real-Time Strategy</option>
+                              <option value="25">Brawler</option>
+                              <option value="26">Educational</option>
+                              <option value="27">Pinball</option>
+                              <option value="28">Music/Rhythm</option>
+                              <option value="29">Light-Gun Shooter</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <input class="form-control" type="file" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <label for="price">Select Region</label>
+                  <div class="input-group">
+                    <span class="input-group-text"
+                      ><i class="fas fa-euro-sign"></i
+                    ></span>
+                    <input
+                      id="price"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="Price in Euro..."
+                    />
+                  </div>
+                  <small class="text-muted">
+                    <i class="fas fa-chart-line"></i> Average selling price for
+                    Age of Empires IV: € 77,67</small
+                  >
+                  <div class="payment-system">
+                    <h5>
+                      <i class="fas fa-shield-alt me-2"></i>Secure Payment
+                    </h5>
+                    <div>
+                      <div>
+                        <small>You'll get</small>
+                        <small
+                          >Secure<i class="fas fa-shield-alt ms-2"></i
+                        ></small>
+                      </div>
+                      <div>
+                        <span>€ 0,00</span>
+                        <small>Fast<i class="fas fa-rocket ms-2"></i></small>
+                      </div>
+                      <div>
+                        <small>Fees € 0,00</small>
+                        <small>Easy<i class="fas fa-child ms-2"></i></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-3 text-end">
+                <button class="btn btn-green">
+                  <i class="fas fa-plus me-2"></i>Save Game
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <footer class="two">
       <div class="container-fluid platforms">
         <div class="row">
@@ -599,5 +765,20 @@
         </div>
       </div>
     </footer>
+    <script>
+      ClassicEditor.create(document.querySelector('#editor'), {
+        removePlugins: ['Heading'],
+        toolbar: [
+          'bold',
+          'italic',
+          'underline',
+          '|',
+          'numberedList',
+          'bulletedList',
+        ],
+      }).catch((error) => {
+        console.log(error)
+      })
+    </script>
   </body>
 </html>

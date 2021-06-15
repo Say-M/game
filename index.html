@@ -7,6 +7,14 @@
     <title>Game Page</title>
 
     <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" />
+
+    <!-- popper js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+      integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- bootstrap -->
     <link
       rel="stylesheet"
@@ -113,7 +121,9 @@
                       <p>GENRE</p>
                       <ul>
                         <li><a href="./listing.html">Football</a></li>
-                        <li><a href="./listing.html">First-Person Shooter</a></li>
+                        <li>
+                          <a href="./listing.html">First-Person Shooter</a>
+                        </li>
                         <li><a href="./listing.html">Action</a></li>
                         <li><a href="./listing.html">Role-Playing</a></li>
                         <li><a href="./listing.html">Sports</a></li>
@@ -140,15 +150,151 @@
         </div>
         <div class="right-header">
           <div class="search-btn"><i class="fas fa-search"></i></div>
-          <!-- <div class="isLogin"></div> -->
-          <div class="isLogout">
+          <div class="isLogin">
+            <span class="message"> <i class="fas fa-envelope"></i></span>
+            <span class="notification">
+              <i class="fas fa-bell"></i>
+              <div class="notification-dropdown">
+                <h3>Notifications</h3>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span class="icon"
+                        ><i class="fas fa-envelope-open"></i
+                      ></span>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Culpa, accusamus.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon"
+                        ><i class="fas fa-envelope-open"></i
+                      ></span>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Culpa, accusamus.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon"
+                        ><i class="fas fa-envelope-open"></i
+                      ></span>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Culpa, accusamus.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon"
+                        ><i class="fas fa-envelope-open"></i
+                      ></span>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Culpa, accusamus.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <a href="./notification.html"
+                  ><i class="fas fa-bell me-2"></i>View all notifications</a
+                >
+              </div>
+            </span>
+            <div class="dropdown">
+              <span
+                class="user dropdown-toggle"
+                id="dropdown-user"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./assets/images/admin.jpg" alt="" />
+                <i class="fas fa-caret-down"></i>
+              </span>
+              <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="dropdown-user"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-id-badge"></i>Admin</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-money-bill"></i>€ 612,72</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-tachometer-alt"></i>Dashboard</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-tags"></i>Listings</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-briefcase"></i>Offer</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-heart"></i>Whitelist</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-credit-card"></i>Report</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-bell"></i>Notifications</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-wrench"></i>Settings</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-user"></i>Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-power-off"></i>Logout</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a href="/add-listing.html" class="btn btn-sm btn-warning px-2">
+              <i class="fas fa-plus"></i
+              ><span class="d-none d-lg-inline-block ms-2">Add listing</span>
+            </a>
+          </div>
+          <!-- <div class="isLogout">
             <div class="signin" data-bs-toggle="modal" data-bs-target="#signin">
               <i class="fas fa-sign-in-alt"></i> Sign in
             </div>
             <div class="signup" data-bs-toggle="modal" data-bs-target="#create">
               <i class="fa fa-user-plus"></i>
             </div>
-          </div>
+          </div> -->
         </div>
         <!-- sign in modal  -->
         <div class="modal fade" id="signin" tabindex="-1">
@@ -1100,11 +1246,11 @@
         },
         breakpoints: {
           0: {
-            slidesPerView: 1.5,
+            slidesPerView: 1,
             spaceBetween: 15,
           },
           576: {
-            slidesPerView: 2.5,
+            slidesPerView: 2,
             spaceBetween: 15,
           },
           768: {

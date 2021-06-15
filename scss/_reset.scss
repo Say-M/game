@@ -283,3 +283,28 @@ a {
     color: lighten($color: $yellow, $amount: 10);
   }
 }
+.dropdown-menu-dark {
+  background: $dark;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  .nav-item.show .nav-link,
+  .nav-link {
+    color: $fontColor;
+    border: none;
+    font-weight: 700;
+    background: transparentize($color: $black, $amount: 0.5);
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    &:hover {
+      background: $darkBody;
+      color: $white;
+    }
+    &.active {
+      background: $darkBody;
+      color: $white;
+      border: none;
+    }
+  }
+}

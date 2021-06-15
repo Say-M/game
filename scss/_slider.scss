@@ -12,12 +12,18 @@
 .game-slide {
   width: 100%;
   display: block;
+  @media screen and(max-width: 575.98px) {
+    margin: 0 1rem;
+  }
   & > div {
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
     color: $white;
     padding-top: 65%;
+    @media screen and(max-width: 575.98px) {
+      padding-top: 60%;
+    }
     .realise-date {
       position: absolute;
       left: 0.5rem;

@@ -6,11 +6,15 @@
     ),
     url(../images/game-icons-bg.jpg);
   background-size: cover;
-  padding: 2rem 0;
   h3 {
+    padding: 2rem 0;
     margin-bottom: 0;
     font-weight: 700;
     color: $white;
+    small {
+      font-size: 0.875rem;
+      opacity: 0.5;
+    }
   }
 }
 .page-body {

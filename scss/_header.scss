@@ -113,7 +113,7 @@ header {
           }
         }
         & > a {
-          background: $dark;
+          background: lighten($color: $darkBody, $amount: 10);
           padding: 0.3rem 0.8rem;
           border-radius: 2rem;
           margin-right: 0.5rem;
@@ -244,7 +244,7 @@ header {
       top: 0;
       transition: 0.2s;
       &.active {
-        top: 4.4rem;
+        top: 4.381379310344828rem;
       }
     }
     i {
@@ -255,6 +255,159 @@ header {
       @media screen and(max-width: 767.98px) {
         display: block;
         cursor: pointer;
+      }
+    }
+    .isLogin {
+      display: flex;
+      align-items: center;
+      & > span {
+        margin-left: 0.3rem;
+        height: 2.0625rem;
+        width: 2.0625rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5rem;
+        background: lighten($color: $darkBody, $amount: 10);
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          background: $dark;
+        }
+        i {
+          color: $white;
+        }
+      }
+
+      .dropdown {
+        background: lighten($color: $darkBody, $amount: 10);
+        margin-left: 0.3rem;
+        height: 2.0625rem;
+        width: 3.5rem;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 5rem;
+        .dropdown-toggle::after {
+          content: none;
+        }
+        .dropdown-menu {
+          top: 0.8rem !important;
+          li {
+            a {
+              color: $fontColor;
+              transition: 0.3s;
+              text-transform: capitalize;
+              i {
+                color: $fontColor;
+                margin-right: 0.8rem;
+              }
+              &:hover {
+                color: $white;
+                i {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+        &:hover {
+          background: $dark;
+        }
+        img {
+          padding: 0.2rem;
+          height: 1.875rem;
+          width: 1.875rem;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 0.3rem;
+        }
+        i {
+          margin-right: 0.5rem;
+        }
+      }
+      .btn {
+        margin-left: 0.3rem;
+        border-radius: 5rem;
+      }
+      .notification {
+        position: relative;
+        & > div {
+          position: absolute;
+          top: 3rem;
+          background: $dark;
+          width: 280px;
+          border-radius: 0.25rem;
+          transition: 0.3s ease-in-out;
+          transform-origin: top;
+          left: 50%;
+          transform: translateX(-65%) scale(0);
+          &.active {
+            transform: translateX(-65%) scale(1);
+          }
+          h3 {
+            padding: 1rem;
+            margin-bottom: 0;
+            border-bottom: 1px solid $darkBody;
+          }
+          & > a {
+            display: block;
+            padding: 1rem;
+            border-top: 1px solid $darkBody;
+            color: $fontColor;
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+        ul {
+          padding: 1rem;
+          list-style: none;
+          margin-bottom: 0;
+          max-height: 300px;
+          overflow: auto;
+          &::-webkit-scrollbar {
+            width: 8px;
+            background: $black;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: $darkBody;
+            border-radius: 0.25rem;
+          }
+          li {
+            &:last-child {
+              a {
+                margin-bottom: 0;
+              }
+            }
+            a {
+              margin-bottom: 1rem;
+              display: flex;
+              justify-content: space-between;
+              color: $fontColor;
+              transition: 0.3s;
+              &:hover {
+                color: $white;
+              }
+              .icon {
+                background: $yellow;
+                color: $white;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2rem;
+                margin-right: 0.5rem;
+              }
+              p {
+                width: calc(100% - 4rem);
+                font-size: 0.875rem;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
       }
     }
     .isLogout {

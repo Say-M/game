@@ -1,0 +1,15 @@
+.withdraw-section {
+  margin: 1rem 0;
+  .nav-tabs {
+    font-size: 1.1rem;
+    .nav-link {
+      padding: 1rem;
+      border-radius: 0.25rem;
+      &:hover,
+      &.active {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+}

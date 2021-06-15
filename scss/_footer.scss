@@ -79,18 +79,25 @@ footer.two {
       color: darken($color: $fontColor, $amount: 20);
       transition: 0.2s;
       display: block;
+      opacity: 0.2;
       &:hover {
+        opacity: 1;
         color: $white;
       }
-      span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-        height: 90px;
-        width: 100%;
+      img {
+        padding: 2rem 1rem;
       }
     }
+  }
+  .parent-item {
+    font-size: 16px;
+    font-weight: 500;
+    color: #565656;
+    background-color: #252525;
+    padding: 0.429rem 1rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-right: 1rem;
   }
   .side-footer {
     padding: 1rem 0;
@@ -133,11 +140,50 @@ footer.two {
   }
   .copyright {
     margin-top: 2rem;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 1rem 1rem 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    @media screen and(max-width: 450px) {
+      justify-content: center;
+      flex-direction: column;
+      p {
+        margin-right: 0 !important;
+        text-align: center;
+      }
+    }
     p {
       font-size: 0.875rem;
+      margin-right: 1rem;
     }
     background: lighten($color: $dark, $amount: 3);
+    .socials {
+      display: flex;
+      margin-bottom: 1rem;
+      padding-left: 0;
+      list-style: none;
+      @media screen and(max-width: 450px) {
+        margin-bottom: 0;
+      }
+      li {
+        a {
+          display: block;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: lighten($color: $darkBody, $amount: 10);
+          color: $white;
+          margin-left: 0.5rem;
+          @media screen and(max-width: 450px) {
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
   }
 }

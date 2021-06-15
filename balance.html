@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Page</title>
+
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"
+      integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom script-->
+    <script src="./assets/scripts/app.js" defer></script>
+    <!-- custom styling -->
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <div class="search-box">
+          <input type="text" placeholder="search..." />
+          <i class="fas fa-times close-search-btn"></i>
+        </div>
+        <div class="left-header">
+          <div class="menu"><i class="fas fa-bars"></i></div>
+          <a href="/" class="logo">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+          <div class="ellipsis"><i class="fas fa-ellipsis-v"></i></div>
+          <ul>
+            <li class="close">
+              <a href="javascript:void(0)">
+                <i class="fas fa-times me-2"></i>
+                <span>Close</span>
+              </a>
+            </li>
+            <li class="list-nav">
+              <a href="javascript:void(0)">
+                <i class="fas fa-tags"></i>
+                <span>Listings</span>
+                <i class="fas fa-caret-down"></i>
+              </a>
+              <div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>Current Generation</p>
+                      <ul>
+                        <li><a href="./listing.html">All Listings</a></li>
+                        <li><a href="./listing.html">PlayStation 4</a></li>
+                        <li><a href="./listing.html">Xbox One</a></li>
+                        <li><a href="./listing.html">PC</a></li>
+                        <li><a href="./listing.html">Nintendo Switch</a></li>
+                        <li><a href="./listing.html">Wii U</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>REGION</p>
+                      <ul>
+                        <li><a href="./listing.html">Global</a></li>
+                        <li><a href="./listing.html">USA</a></li>
+                        <li><a href="./listing.html">EUROPE</a></li>
+                        <li><a href="./listing.html">ARGENTINA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>PRICE</p>
+                      <ul>
+                        <li><a href="./listing.html">1€</a></li>
+                        <li><a href="./listing.html">5€</a></li>
+                        <li><a href="./listing.html">10€</a></li>
+                        <li><a href="./listing.html">20€</a></li>
+                        <li><a href="./listing.html">30€</a></li>
+                        <li><a href="./listing.html">40€</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>GENRE</p>
+                      <ul>
+                        <li><a href="./listing.html">Football</a></li>
+                        <li>
+                          <a href="./listing.html">First-Person Shooter</a>
+                        </li>
+                        <li><a href="./listing.html">Action</a></li>
+                        <li><a href="./listing.html">Role-Playing</a></li>
+                        <li><a href="./listing.html">Sports</a></li>
+                        <li><a href="./listing.html">Strategy</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="/games">
+                <i class="fas fa-gamepad"></i>
+                <span>Games</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="search-btn">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-header">
+          <div class="search-btn"><i class="fas fa-search"></i></div>
+          <!-- <div class="isLogin"></div> -->
+          <div class="isLogout">
+            <div class="signin" data-bs-toggle="modal" data-bs-target="#signin">
+              <i class="fas fa-sign-in-alt"></i> Sign in
+            </div>
+            <div class="signup" data-bs-toggle="modal" data-bs-target="#create">
+              <i class="fa fa-user-plus"></i>
+            </div>
+          </div>
+        </div>
+        <!-- sign in modal  -->
+        <div class="modal fade" id="signin" tabindex="-1">
+          <div class="modal-dialog modal-login">
+            <div class="modal-content">
+              <div class="modal-bg"></div>
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  <i class="fas fa-sign-in-alt me-2"></i> Sign in
+                </h5>
+                <div class="d-flex flex-row-reverse align-items-center">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <button
+                    class="btn btn-sm btn-warning float-end me-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#create"
+                    data-bs-dismiss="modal"
+                  >
+                    <i class="fas fa-user-plus mr-2"></i> Create account
+                  </button>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="p-3 mb-3">
+                      <img
+                        src="./assets/images/logo.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="social-btn steam">
+                        <span class="icon"><i class="fab fa-steam"></i></span>
+                        <span>Sign in with stream</span>
+                      </div>
+                      <div class="social-btn twitter">
+                        <span class="icon"><i class="fab fa-twitter"></i></span>
+                        <span>Sign in with twitter</span>
+                      </div>
+                      <div class="social-btn facebook">
+                        <span class="icon"
+                          ><i class="fab fa-facebook-f"></i
+                        ></span>
+                        <span>Sign in with facebook</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <form action="#" class="p-3 mb-3">
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-envelope"></i
+                        ></span>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email Address"
+                        />
+                      </div>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-unlock"></i
+                        ></span>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div class="form-check mb-2">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="remember"
+                        />
+                        <label class="form-check-label" for="remember">
+                          Remember Me
+                        </label>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-animation btn-sm btn-green w-100 mb-2"
+                      >
+                        <span class="icon"
+                          ><i class="fas fa-sign-in-alt"></i
+                        ></span>
+                        <span class="text">Sign in</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-sm w-100"
+                      >
+                        Forgot your password
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- create account modal -->
+        <div class="modal fade" id="create" tabindex="-1">
+          <div class="modal-dialog modal-create">
+            <div class="modal-content">
+              <div class="modal-bg"></div>
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  <i class="fas fa-sign-in-alt me-2"></i> Sign in
+                </h5>
+                <div class="d-flex flex-row-reverse align-items-center">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <button
+                    class="btn btn-sm btn-warning float-end me-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signin"
+                    data-bs-dismiss="modal"
+                  >
+                    <i class="fas fa-sign-in-alt mr-2"></i> Sign in
+                  </button>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-sm-6">
+                    <form action="#" class="p-3 mb-3">
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-user"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Username"
+                        />
+                      </div>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-envelope"></i
+                        ></span>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email Address"
+                        />
+                      </div>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-unlock"></i
+                        ></span>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-exchange-alt"></i
+                        ></span>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Confirm password"
+                        />
+                      </div>
+                      <div class="form-check mb-2">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="remember"
+                        />
+                        <label class="form-check-label" for="remember">
+                          Remember Me
+                        </label>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-animation btn-sm btn-green w-100 mb-2"
+                      >
+                        <span class="icon"
+                          ><i class="fas fa-sign-in-alt"></i
+                        ></span>
+                        <span class="text">Sign in</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-sm w-100"
+                      >
+                        Forgot your password
+                      </button>
+                    </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="p-3 mb-3">
+                      <img
+                        src="./assets/images/logo.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="social-btn steam">
+                        <span class="icon"><i class="fab fa-steam"></i></span>
+                        <span>Sign in with stream</span>
+                      </div>
+                      <div class="social-btn twitter">
+                        <span class="icon"><i class="fab fa-twitter"></i></span>
+                        <span>Sign in with twitter</span>
+                      </div>
+                      <div class="social-btn facebook">
+                        <span class="icon"
+                          ><i class="fab fa-facebook-f"></i
+                        ></span>
+                        <span>Sign in with facebook</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-header">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h3>€ 612,72 <br /><small>Available Balance 35</small></h3>
+          <h3>35 <br /><small>Sales</small></h3>
+        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#transactions"
+              type="button"
+              role="tab"
+            >
+              Transactions
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#withdrawal"
+              type="button"
+              role="tab"
+            >
+              withdrawal
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="game-overview">
+      <div class="container">
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade active show"
+            id="transactions"
+            role="tabpanel"
+          >
+            <div class="my-3">
+              <div class="page-pagination">
+                <div class="prev">«</div>
+                <div class="pages">
+                  <span class="active">1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <div class="next">»</div>
+              </div>
+              <ul class="custom-table">
+                <li>
+                  <div class="table-content">
+                    <div class="left">
+                      <div class="type add">
+                        <span><i class="fas fa-plus"></i></span>
+                        <span>€ 0,15</span>
+                      </div>
+                    </div>
+                    <div class="center">
+                      <div class="left-col">
+                        <span><small>Type</small><br />Free</span>
+                        <span><small>Payment Method</small><br />Balance</span>
+                        <span><small>Details</small><br />0.15 EUR</span>
+                      </div>
+                      <div class="right-col">
+                        <img src="./assets/images/games/game-5.jpg" alt="" />
+                        <div>
+                          <h6 class="title">Carnivores: Dinosaur Hunt</h6>
+                          <small>PC</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <a href="./details.html"
+                        ><i class="fas fa-arrow-right me-2"></i>Details</a
+                      >
+                    </div>
+                  </div>
+                  <div class="table-info">
+                    <span>
+                      <i class="fas fa-suitcase" aria-hidden="true"></i>
+                      VBRAE.COM
+                    </span>
+                    <span>
+                      <i class="fas fa-clock" aria-hidden="true"></i> 2 weeks
+                      ago
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="table-content">
+                    <div class="left">
+                      <div class="type add">
+                        <span><i class="fas fa-plus"></i></span>
+                        <span>€ 0,15</span>
+                      </div>
+                    </div>
+                    <div class="center">
+                      <div class="left-col">
+                        <span><small>Type</small><br />Free</span>
+                        <span><small>Payment Method</small><br />Balance</span>
+                        <span><small>Details</small><br />0.15 EUR</span>
+                      </div>
+                      <div class="right-col">
+                        <img src="./assets/images/games/game-5.jpg" alt="" />
+                        <div>
+                          <h6 class="title">Carnivores: Dinosaur Hunt</h6>
+                          <small>PC</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <a href="./details.html"
+                        ><i class="fas fa-arrow-right me-2"></i>Details</a
+                      >
+                    </div>
+                  </div>
+                  <div class="table-info">
+                    <span>
+                      <i class="fas fa-suitcase" aria-hidden="true"></i>
+                      VBRAE.COM
+                    </span>
+                    <span>
+                      <i class="fas fa-clock" aria-hidden="true"></i> 2 weeks
+                      ago
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="table-content">
+                    <div class="left">
+                      <div class="type remove">
+                        <span><i class="fas fa-plus"></i></span>
+                        <span>€ 0,15</span>
+                      </div>
+                    </div>
+                    <div class="center">
+                      <div class="left-col">
+                        <span><small>Type</small><br />Free</span>
+                        <span><small>Payment Method</small><br />Balance</span>
+                        <span><small>Details</small><br />0.15 EUR</span>
+                      </div>
+                      <div class="right-col">
+                        <img src="./assets/images/games/game-5.jpg" alt="" />
+                        <div>
+                          <h6 class="title">Carnivores: Dinosaur Hunt</h6>
+                          <small>PC</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <a href="./details.html"
+                        ><i class="fas fa-arrow-right me-2"></i>Details</a
+                      >
+                    </div>
+                  </div>
+                  <div class="table-info">
+                    <span>
+                      <i class="fas fa-suitcase" aria-hidden="true"></i>
+                      VBRAE.COM
+                    </span>
+                    <span>
+                      <i class="fas fa-clock" aria-hidden="true"></i> 2 weeks
+                      ago
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="table-content">
+                    <div class="left">
+                      <div class="type remove">
+                        <span><i class="fas fa-plus"></i></span>
+                        <span>€ 0,15</span>
+                      </div>
+                    </div>
+                    <div class="center">
+                      <div class="left-col">
+                        <span><small>Type</small><br />Free</span>
+                        <span><small>Payment Method</small><br />Balance</span>
+                        <span><small>Details</small><br />0.15 EUR</span>
+                      </div>
+                      <div class="right-col">
+                        <img src="./assets/images/games/game-5.jpg" alt="" />
+                        <div>
+                          <h6 class="title">Carnivores: Dinosaur Hunt</h6>
+                          <small>PC</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <a href="./details.html"
+                        ><i class="fas fa-arrow-right me-2"></i>Details</a
+                      >
+                    </div>
+                  </div>
+                  <div class="table-info">
+                    <span>
+                      <i class="fas fa-suitcase" aria-hidden="true"></i>
+                      VBRAE.COM
+                    </span>
+                    <span>
+                      <i class="fas fa-clock" aria-hidden="true"></i> 2 weeks
+                      ago
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="table-content">
+                    <div class="left">
+                      <div class="type remove">
+                        <span><i class="fas fa-plus"></i></span>
+                        <span>€ 0,15</span>
+                      </div>
+                    </div>
+                    <div class="center">
+                      <div class="left-col">
+                        <span><small>Type</small><br />Free</span>
+                        <span><small>Payment Method</small><br />Balance</span>
+                        <span><small>Details</small><br />0.15 EUR</span>
+                      </div>
+                      <div class="right-col">
+                        <img src="./assets/images/games/game-5.jpg" alt="" />
+                        <div>
+                          <h6 class="title">Carnivores: Dinosaur Hunt</h6>
+                          <small>PC</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <a href="./details.html"
+                        ><i class="fas fa-arrow-right me-2"></i>Details</a
+                      >
+                    </div>
+                  </div>
+                  <div class="table-info">
+                    <span>
+                      <i class="fas fa-suitcase" aria-hidden="true"></i>
+                      VBRAE.COM
+                    </span>
+                    <span>
+                      <i class="fas fa-clock" aria-hidden="true"></i> 2 weeks
+                      ago
+                    </span>
+                  </div>
+                </li>
+              </ul>
+              <div class="page-pagination">
+                <div class="prev">«</div>
+                <div class="pages">
+                  <span class="active">1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <div class="next">»</div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="withdrawal" role="tabpanel">
+            <div class="withdraw-section">
+              <div class="tab-content" id="myTabContent">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#paypal"
+                      type="button"
+                      role="tab"
+                    >
+                      <i class="fab fa-paypal me-2"></i>PayPal
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#bank_transfer"
+                      type="button"
+                      role="tab"
+                    >
+                      <i class="fas fa-credit-card me-2"></i>Bank Transfer
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#bitcoin"
+                      type="button"
+                      role="tab"
+                    >
+                      <i class="fab fa-bitcoin me-2"></i>Bitcoin
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#litecoin"
+                      type="button"
+                      role="tab"
+                    >
+                      <i class="fab fa-bitcoin me-2"></i>Litecoin
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#dogecoin"
+                      type="button"
+                      role="tab"
+                    >
+                      <i class="fab fa-bitcoin me-2"></i>DogeCoin
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#ethereum"
+                      type="button"
+                      role="tab"
+                    >
+                      <i class="fab fa-ethereum me-2"></i>Ethereum
+                    </button>
+                  </li>
+                </ul>
+                <div
+                  class="tab-pane fade active show"
+                  id="paypal"
+                  role="tabpanel"
+                >
+                  <div class="page-content">
+                    <div class="content-header">
+                      <h5>Withdrawal Details</h5>
+                    </div>
+                    <div class="content-body">
+                      <div class="mb-3">
+                        <label for="paypal"
+                          >PayPal Email address
+                          <span class="text-danger">*</span></label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text"
+                            ><i class="fab fa-paypal"></i
+                          ></span>
+                          <input
+                            id="paypal"
+                            type="text"
+                            class="form-control form-control-lg"
+                            placeholder="PayPal email address"
+                          />
+                        </div>
+                        <small
+                          >2% withdrawal fee will be deducted on Paypal
+                          withdrawal</small
+                        >
+                      </div>
+                      <small>Amount</small>
+                      <h5 class="text-white">€ 612,72</h5>
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <button class="btn btn-green">
+                      <i class="fab fa-paypal me-2"></i>Submit Request
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="bank_transfer" role="tabpanel">
+                  <div class="page-content">
+                    <div class="content-header">
+                      <h5>Withdrawal Details</h5>
+                    </div>
+                    <div class="content-body">
+                      <div class="mb-3">
+                        <label
+                          >Bank account holder name
+                          <span class="text-danger">*</span></label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text"
+                            ><i class="fas fa-id-card"></i
+                          ></span>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            placeholder="Bank account holder name"
+                          />
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          >IBAN number <span class="text-danger">*</span></label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text"
+                            ><i class="fas fa-money-check"></i
+                          ></span>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            placeholder="IBAN number"
+                          />
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          >Swift (BIC) code
+                          <span class="text-danger">*</span></label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text"
+                            ><i class="fas fa-money-check"></i
+                          ></span>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            placeholder="Swift (BIC) code"
+                          />
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          >Bank name <span class="text-danger">*</span></label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text"
+                            ><i class="fas fa-university"></i
+                          ></span>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            placeholder="Bank name"
+                          />
+                        </div>
+                        <small
+                          >2% withdrawal fee will be deducted on Paypal
+                          withdrawal</small
+                        >
+                      </div>
+                      <small>Amount</small>
+                      <h5 class="text-white">€ 612,72</h5>
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <button class="btn btn-green">
+                      <i class="fas fa-money-check me-2"></i>Submit Request
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="bitcoin" role="tabpanel">
+                  <div class="page-content">
+                    <div class="content-header">
+                      <h5>Withdrawal Details</h5>
+                    </div>
+                    <div class="content-body">
+                      <div class="mb-3">
+                        <label
+                          >Bitcoin address
+                          <span class="text-danger">*</span></label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text"
+                            ><i class="fab fa-bitcoin"></i
+                          ></span>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            placeholder="Bitcoin address"
+                          />
+                        </div>
+                        <small
+                          >1% withdrawal fee will be deducted on Bitcoin
+                          withdrawal</small
+                        >
+                      </div>
+                      <small>Amount</small>
+                      <h5 class="text-white">€ 612,72</h5>
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <button class="btn btn-green">
+                      <i class="fab fa-bitcoin me-2"></i>Submit Request
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="litecoin" role="tabpanel">
+                  <div class="page-content">
+                    <div class="content-header">
+                      <h5>Withdrawal Details</h5>
+                    </div>
+                    <div class="content-body">
+                      <div class="mb-3">
+                        <label
+                          >Litecoin address
+                          <span class="text-danger">*</span></label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text"
+                            ><i class="fab fa-bitcoin"></i
+                          ></span>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            placeholder="Litecoin address"
+                          />
+                        </div>
+                        <small
+                          >1% withdrawal fee will be deducted on Litecoin
+                          withdrawal</small
+                        >
+                      </div>
+                      <small>Amount</small>
+                      <h5 class="text-white">€ 612,72</h5>
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <button class="btn btn-green">
+                      <i class="fab fa-bitcoin me-2"></i>Submit Request
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="dogecoin" role="tabpanel">
+                  <div class="page-content">
+                    <div class="content-header">
+                      <h5>Withdrawal Details</h5>
+                    </div>
+                    <div class="content-body">
+                      <div class="mb-3">
+                        <label
+                          >Dogecoin address
+                          <span class="text-danger">*</span></label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text"
+                            ><i class="fab fa-bitcoin"></i
+                          ></span>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            placeholder="Dogecoin address"
+                          />
+                        </div>
+                        <small
+                          >1% withdrawal fee will be deducted on Dogecoin
+                          withdrawal</small
+                        >
+                      </div>
+                      <small>Amount</small>
+                      <h5 class="text-white">€ 612,72</h5>
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <button class="btn btn-green">
+                      <i class="fab fa-bitcoin me-2"></i>Submit Request
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="ethereum" role="tabpanel">
+                  <div class="page-content">
+                    <div class="content-header">
+                      <h5>Withdrawal Details</h5>
+                    </div>
+                    <div class="content-body">
+                      <div class="mb-3">
+                        <label
+                          >Ethereum address
+                          <span class="text-danger">*</span></label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text"
+                            ><i class="fab fa-bitcoin"></i
+                          ></span>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            placeholder="Ethereum address"
+                          />
+                        </div>
+                        <small
+                          >1% withdrawal fee will be deducted on Ethereum
+                          withdrawal</small
+                        >
+                      </div>
+                      <small>Amount</small>
+                      <h5 class="text-white">€ 612,72</h5>
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <button class="btn btn-green">
+                      <i class="fab fa-ethereum me-2"></i>Submit Request
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="two">
+      <div class="container-fluid platforms">
+        <div class="row">
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+            <img
+              src="./assets/images/ps3_tiny.png"
+              class="img-fluid"
+              alt="PlayStation 3"
+            />
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+            <img src="./assets/images/pc_tiny.png" class="img-fluid" alt="PC" />
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+            <img
+              src="./assets/images/xboxone_tiny.png"
+              class="img-fluid"
+              alt="Xbox One"
+            />
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+            <img
+              src="./assets/images/ps4_tiny.png"
+              class="img-fluid"
+              alt="PlayStation 4"
+            />
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+            <img
+              src="./assets/images/xbox360_tiny.png"
+              class="img-fluid"
+              alt="Xbox 360"
+            />
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+            <img
+              src="./assets/images/wii-u_tiny.png"
+              class="img-fluid"
+              alt="Wii U"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="mt-5">
+          <span class="parent-item"
+            ><i class="fas fa-users"></i> Community</span
+          >
+          <span class="parent-item"
+            ><i class="fas fa-info-circle"></i> Service</span
+          >
+        </div>
+        <div class="side-footer">
+          <div class="links">
+            <a href="#">Terms and Condition</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+          </div>
+          <div>
+            <select class="form-select form-select-sm">
+              <option value="" disabled>Language</option>
+              <option value="English">English</option>
+              <option value="Bangle">Bangle</option>
+            </select>
+            <select class="form-select form-select-sm">
+              <option value="" disabled>Theme</option>
+              <option value="dark">Dark</option>
+              <option value="light">Light</option>
+            </select>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2021 GAMELOOF.COM</p>
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitch"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
