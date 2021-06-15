@@ -1,6 +1,25 @@
 footer.one {
   background: $dark;
   padding: 2rem 0;
+  padding-top: 0;
+  .platforms {
+    border-bottom: 1px solid transparentize($color: $white, $amount: 0.95);
+    a {
+      text-decoration: none;
+      text-transform: capitalize;
+      color: darken($color: $fontColor, $amount: 20);
+      transition: 0.2s;
+      display: block;
+      opacity: 0.2;
+      &:hover {
+        opacity: 1;
+        color: $white;
+      }
+      img {
+        padding: 2rem 1rem;
+      }
+    }
+  }
   .footer-item {
     margin: 1rem 0;
     .logo {
