@@ -379,207 +379,112 @@
         </div>
       </div>
     </header>
-    <div class="page-header">
-      <div class="container">
-        <h3><i class="fas fa-wrench me-2"></i>Settings</h3>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#transaction"
-              type="button"
-              role="tab"
-            >
-              Transaction
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <section class="game-overview">
-      <div class="container">
-        <div class="tab-content" id="myTabContent">
-          <div
-            class="tab-pane fade show active"
-            id="transaction"
-            role="tabpanel"
-            aria-labelledby="home-tab"
-          >
-            <div class="page-content">
-              <div class="content-header">
-                <h5>Sales Transaction</h5>
-              </div>
-              <div class="content-body">
-                <div class="mb-3">
-                  <button class="btn btn-sm btn-info">Copy</button>
-                  <button class="btn btn-sm btn-info">Excel</button>
-                  <button class="btn btn-sm btn-info">CVS</button>
-                  <button class="btn btn-sm btn-info">PDF</button>
-                  <button class="btn btn-sm btn-info">Print</button>
-                </div>
-                <input
-                  style="max-width: 300px"
-                  type="text"
-                  class="form-control form-control-sm ms-auto mb-3"
-                  placeholder="Search..."
-                />
-                <div class="table-responsive text-nowrap">
-                  <table
-                    class="table table-dark table-hover table-sm table-bordered"
-                  >
-                    <thead>
-                      <tr class="table-active">
-                        <td>#</td>
-                        <td>Total</td>
-                        <td>Fee</td>
-                        <td>VAT</td>
-                        <td>Method</td>
-                        <td>Currency</td>
-                        <td>Country</td>
-                        <td>Date</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>4.85</td>
-                        <td>0.15</td>
-                        <td>0</td>
-                        <td>balance</td>
-                        <td>EUR</td>
-                        <td>-</td>
-                        <td>30-05-2021 07:51:04</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>3.88</td>
-                        <td>0.12</td>
-                        <td>0</td>
-                        <td>balance</td>
-                        <td>EUR</td>
-                        <td>-</td>
-                        <td>28-05-2021 02:53:14</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>6.25</td>
-                        <td>0.19</td>
-                        <td>0.25</td>
-                        <td>balance</td>
-                        <td>EUR</td>
-                        <td>Sweden</td>
-                        <td>24-05-2021 06:01:18</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>2.50</td>
-                        <td>0.08</td>
-                        <td>0.25</td>
-                        <td>balance</td>
-                        <td>EUR</td>
-                        <td>Sweden</td>
-                        <td>22-05-2021 14:35:40</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>2.91</td>
-                        <td>0.09</td>
-                        <td>0</td>
-                        <td>balance</td>
-                        <td>EUR</td>
-                        <td>-</td>
-                        <td>22-05-2021 14:22:32</td>
-                      </tr>
-                      <tr>
-                        <td>6</td>
-                        <td>2.91</td>
-                        <td>0.09</td>
-                        <td>0</td>
-                        <td>balance</td>
-                        <td>EUR</td>
-                        <td>-</td>
-                        <td>22-05-2021 14:13:52</td>
-                      </tr>
-                      <tr>
-                        <td>7</td>
-                        <td>6.06</td>
-                        <td>0.19</td>
-                        <td>0</td>
-                        <td>balance</td>
-                        <td>EUR</td>
-                        <td>-</td>
-                        <td>22-05-2021 06:12:57</td>
-                      </tr>
-                      <tr>
-                        <td>8</td>
-                        <td>6.06</td>
-                        <td>0.19</td>
-                        <td>0</td>
-                        <td>balance</td>
-                        <td>EUR</td>
-                        <td>-</td>
-                        <td>21-05-2021 22:43:21</td>
-                      </tr>
-                      <tr>
-                        <td>9</td>
-                        <td>5.00</td>
-                        <td>0.15</td>
-                        <td>0</td>
-                        <td>balance</td>
-                        <td>EUR</td>
-                        <td>Morocco</td>
-                        <td>21-05-2021 18:45:57</td>
-                      </tr>
-                      <tr>
-                        <td>10</td>
-                        <td>0.55</td>
-                        <td>0.45</td>
-                        <td>0</td>
-                        <td>coinpayment</td>
-                        <td>EUR</td>
-                        <td>-</td>
-                        <td>21-05-2021 08:03:46</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="content-footer">
-                <div
-                  class="
-                    d-flex
-                    justify-content-between
-                    align-items-center
-                    text-nowrap
-                    flex-wrap
-                  "
-                >
-                  <p>Showing 1 to 10 of 50 entries</p>
-                  <div class="page-pagination">
-                    <div class="prev">«</div>
-                    <div class="pages">
-                      <span class="active">1</span>
-                      <span>2</span>
-                      <span>3</span>
-                      <span>4</span>
-                      <span>5</span>
-                      <span>6</span>
-                      <span>7</span>
-                      <span>8</span>
-                      <span>9</span>
-                      <span>10</span>
-                    </div>
-                    <div class="next">»</div>
+    <div class="container">
+      <div class="message">
+        <div class="show-message-list shadow-lg">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="left">
+          <div class="new-message">
+            <i class="fas fa-envelope-open"></i> New message
+          </div>
+          <ul class="message-list">
+            <li>
+              <a href="#">
+                <img src="./assets/images/admin.jpg" alt="" />
+                <div>
+                  <h6 class="text-truncate">Umar</h6>
+                  <span class="float-end ms-4">2 months ago</span>
+                  <div>
+                    <span class="text-truncate d-block"
+                      >Thank you for your response.</span
+                    >
                   </div>
                 </div>
-              </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="active">
+                <img src="./assets/images/games/game-1.jpg" alt="" />
+                <div>
+                  <h6 class="text-truncate">Sayem</h6>
+                  <span class="float-end ms-4">2 months ago</span>
+                  <div>
+                    <span class="text-truncate d-block">Ok I understand.</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/images/admin.jpg" alt="" />
+                <div>
+                  <h6 class="text-truncate">Umar</h6>
+                  <span class="float-end ms-4">2 months ago</span>
+                  <div>
+                    <span class="text-truncate d-block"
+                      >Thank you for your response.</span
+                    >
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/images/games/game-1.jpg" alt="" />
+                <div>
+                  <h6 class="text-truncate">Sayem</h6>
+                  <span class="float-end ms-4">2 months ago</span>
+                  <div>
+                    <span class="text-truncate d-block">Ok I understand.</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="message-body">
+            <div class="sender">
+              <img src="./assets/images/games/game-2.jpg" alt="" />
+              <p>
+                You know on The purchase screen for manually delivery games. It
+                must say or show " sellers sends The key Within 24 hours. :)
+                <span class="seen"><i class="fas fa-check-double"></i></span>
+              </p>
             </div>
+            <div class="receiver">
+              <img src="./assets/images/admin.jpg" alt="" />
+              <p>Hi</p>
+            </div>
+            <div class="sender">
+              <img src="./assets/images/games/game-2.jpg" alt="" />
+              <p>
+                Hi, I am new developer to fix this website. I need to know some
+                info from you to continue work. please let me know when you are
+                available...
+                <span class="seen"><i class="fas fa-check-double"></i></span>
+              </p>
+            </div>
+            <div class="receiver">
+              <img src="./assets/images/admin.jpg" alt="" />
+              <p>Hi</p>
+            </div>
+            <div class="receiver">
+              <img src="./assets/images/admin.jpg" alt="" />
+              <p>I'm available</p>
+            </div>
+          </div>
+          <div class="message-input">
+            <textarea
+              class="form-control"
+              placeholder="Enter your message..."
+            ></textarea>
+            <span class="send"><i class="fas fa-paper-plane"></i></span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <footer class="one">
       <div class="container-fluid platforms">
         <div class="row">

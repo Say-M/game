@@ -1,0 +1,190 @@
+.message {
+  margin: 1rem 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  .show-message-list {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: $darkBody;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 111;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: $white;
+    @media screen and(min-width: 991.98px) {
+      display: none;
+    }
+  }
+  .left {
+    max-width: 300px;
+    max-height: 800px;
+    overflow: auto;
+    background-color: $dark;
+    @media screen and(max-width: 991.98px) {
+      position: absolute;
+      z-index: 111;
+      height: 100%;
+      transition: 0.3s ease-in-out;
+      left: -100%;
+      &.active {
+        left: 0;
+      }
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      li {
+        a {
+          color: $fontColor;
+          display: flex;
+          padding: 1rem 0.5rem;
+          border-bottom: 1px solid $darkBody;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            background-color: darken($color: $dark, $amount: 10);
+            color: $white;
+          }
+          &.active {
+            background-color: $blue;
+            color: $white;
+          }
+          img {
+            width: 3rem;
+            height: 3rem;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 0.8rem;
+          }
+          & > div {
+            width: calc(100% - 3rem);
+            h6 {
+              font-weight: 700;
+              margin-bottom: 0.5rem;
+            }
+            & > div {
+              display: flex;
+              justify-content: space-between;
+            }
+            span {
+              font-size: 75%;
+              //   &:last-child {
+              //     margin-left: 1rem;
+              //   }
+            }
+          }
+        }
+      }
+    }
+  }
+  .new-message {
+    background-color: $blue;
+    color: $white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .right {
+    width: calc(100% - 300px);
+    padding: 1rem;
+    background-color: $dark;
+    max-height: 800px;
+    overflow: auto;
+    position: relative;
+    @media screen and(max-width: 991.98px) {
+      width: 100%;
+    }
+    .message-body {
+      margin-bottom: 5rem;
+      .sender {
+        margin-left: auto;
+        flex-direction: row-reverse;
+        position: relative;
+        img {
+          margin-left: 0.8rem;
+        }
+        p {
+          color: $white;
+          background-color: $blue;
+          position: relative;
+        }
+        .seen {
+          width: 1.2rem;
+          height: 1.2rem;
+          border-radius: 50%;
+          background-color: $green;
+          color: $white;
+          position: absolute;
+          font-size: 0.65rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          right: -0.5rem;
+          bottom: -0.5rem;
+        }
+      }
+      .receiver {
+        img {
+          margin-right: 0.8rem;
+        }
+        p {
+          color: $dark;
+          background-color: darken($color: $white, $amount: 10);
+        }
+      }
+      .sender,
+      .receiver {
+        max-width: 75%;
+        display: flex;
+        margin-bottom: 0;
+        @media screen and(max-width: 767.98px) {
+          max-width: 90%;
+        }
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        p {
+          padding: 0.5rem 1rem;
+          border-radius: 0.25rem;
+        }
+      }
+    }
+    .message-input {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      textarea {
+        border-radius: 0;
+        resize: none;
+        &:active,
+        &:focus {
+          border: none;
+          box-shadow: none;
+        }
+      }
+      span {
+        cursor: pointer;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+}

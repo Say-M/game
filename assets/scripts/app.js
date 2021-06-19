@@ -156,3 +156,18 @@ mediaOverlay?.addEventListener('click', () => {
   mediaModal.classList.add('d-none')
   mediaOverlay.classList.add('d-none')
 })
+
+//message
+const showMsgBtn = document.querySelector('.show-message-list')
+const leftMsg = document.querySelector('.message .left')
+const msgList = document.querySelectorAll('.message-list li a')
+
+showMsgBtn?.addEventListener('click', () => {
+  leftMsg.classList.add('active')
+})
+msgList?.forEach((msgItem) => {
+  msgItem.addEventListener('click', (e) => {
+    e.preventDefault()
+    leftMsg.classList.remove('active')
+  })
+})
