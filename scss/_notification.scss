@@ -1,0 +1,51 @@
+ul.notification {
+  margin: 1rem 0;
+  list-style: none;
+  padding-left: 0;
+  li {
+    margin-bottom: 0.5rem;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.03);
+    }
+    a {
+      color: $fontColor;
+      display: flex;
+      justify-content: stretch;
+      background-color: $dark;
+      border-radius: 0.25rem;
+      .left {
+        display: flex;
+        align-items: center;
+        background-color: lighten($color: $dark, $amount: 5);
+        padding: 0.5rem;
+        border-radius: 0.25rem 0 0 0.25rem;
+        span {
+          width: 2.5rem;
+          height: 2.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: lighten($color: $dark, $amount: 25);
+          border-radius: 50%;
+          margin-right: 0.8rem;
+          color: $white;
+        }
+        img {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      .right {
+        padding: 0.5rem;
+        border-radius: 0 0.25rem 0.25rem 0;
+        p {
+          margin-bottom: 0;
+          color: lighten($color: $fontColor, $amount: 30);
+        }
+      }
+    }
+  }
+}

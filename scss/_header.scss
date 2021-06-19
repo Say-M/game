@@ -1,7 +1,11 @@
 header {
-  background: transparent;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 33, 33, 0) 0%,
+    rgba(34, 33, 33, 0.8) 100%
+  );
   position: sticky;
-  z-index: 11111;
+  z-index: 999;
   top: 0;
   transition: 0.3s;
 }

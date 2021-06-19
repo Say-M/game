@@ -109,8 +109,50 @@ systemItems.forEach((systemItem) => {
   })
 })
 
-searchGame.addEventListener('click', () => {
+searchGame?.addEventListener('click', () => {
   searchGame.innerHTML = '<i class="fa fa-spinner fa-pulse fa-fw"></i>'
   systemDropdown.classList.add('d-none')
   searching.classList.remove('d-none')
+})
+
+//product
+const priceInput = document.querySelector('#price-input')
+const priceElement = document.querySelector('#price')
+
+priceInput?.addEventListener('click', () => {
+  const scrollHeight = priceElement.scrollHeight
+  if (priceInput.checked) {
+    priceElement.style.height = scrollHeight + 'px'
+  } else priceElement.style.height = 0
+})
+
+//media modal
+const mediaModal = document.querySelector('.media-modal')
+const mediaOverlay = document.querySelector('.media-overlay')
+const mediaItemImages = document.querySelectorAll('.media-item')
+
+mediaItemImages?.forEach((image) => {
+  image.addEventListener('click', () => {
+    const imgElement = document.createElement('img')
+    const imageSrc = image.getAttribute('data-image')
+    const video = image.getAttribute('data-video')
+    mediaModal.innerHTML = null
+    if (imageSrc) {
+      imgElement.setAttribute('src', imageSrc)
+      mediaModal.appendChild(imgElement)
+      mediaModal.classList.remove('d-none')
+      mediaOverlay.classList.remove('d-none')
+    } else {
+      const videoWrapper = document.createElement('div')
+      videoWrapper.classList.add('video-wrapper')
+      videoWrapper.innerHTML = video
+      mediaModal.classList.remove('d-none')
+      mediaOverlay.classList.remove('d-none')
+      mediaModal.appendChild(videoWrapper)
+    }
+  })
+})
+mediaOverlay?.addEventListener('click', () => {
+  mediaModal.classList.add('d-none')
+  mediaOverlay.classList.add('d-none')
 })

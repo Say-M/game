@@ -1,256 +1,319 @@
 .game-overview {
   min-height: calc(100vh - 2.5rem);
-  .page-content {
-    margin: 1rem 0;
-    transition: 0.3s ease-in-out;
-    & > div {
-      &:first-child {
-        border-radius: 0.25rem 0.25rem 0 0;
-      }
-      &:last-child {
-        border-radius: 0 0 0.25rem 0.25rem;
-      }
+}
+.page-content {
+  margin: 1rem 0;
+  transition: 0.3s ease-in-out;
+  & > div {
+    &:first-child {
+      border-radius: 0.25rem 0.25rem 0 0;
     }
-    .content-header {
-      padding: 1rem;
-      color: $white;
-      background: lighten($color: $dark, $amount: 5);
-      h5 {
-        margin-bottom: 0;
-      }
+    &:last-child {
+      border-radius: 0 0 0.25rem 0.25rem;
     }
-    .content-body {
-      padding: 1rem;
-      background: $dark;
-      .system-dropdown {
-        .input-group-text {
-          padding: 0;
-          &.system {
-            .dropdown-toggle {
-              cursor: pointer;
-              padding: 0.7rem 1.25rem;
-              color: $white;
-              font-weight: 700;
-              & + ul {
-                font-size: 0.875rem;
-                .system-item {
-                  cursor: pointer;
-                }
-                .more {
-                  &:hover {
-                    ul {
-                      display: block;
-                    }
-                  }
-                  ul {
-                    font-size: 0.875rem;
-                    right: -101%;
-                    font-size: 0.875rem;
-                    top: 0;
-                    .dropdown-item {
-                      cursor: pointer;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      .search {
-        position: relative;
-        ul {
-          list-style: none;
-          margin-bottom: 0;
-          padding-left: 0;
-          position: absolute;
-          width: 100%;
-          top: 3rem;
-          left: 0;
-          display: none;
-          &.active {
-            display: block;
-          }
-          li {
-            &:last-child {
-              & > div {
-                border-radius: 0 0 0.25rem 0.25rem;
-                border-bottom: none;
-              }
-            }
-            & > div {
-              cursor: pointer;
-              display: flex;
-              background: lighten($color: $dark, $amount: 5);
-              width: 100%;
-              padding: 1rem;
-              border-bottom: 1px solid lighten($color: $dark, $amount: 10);
-              transition: 0.2s ease-in-out;
-              &:hover {
-                transform: scale(1.03);
-                box-shadow: 0 30px 50px -10px rgb(0, 0, 0);
-              }
-              img {
-                width: 3rem;
-                height: 3rem;
-                border-radius: 50%;
-                margin-right: 0.8rem;
-                object-fit: cover;
-              }
-              & > div {
-                h6 {
-                  color: $white;
-                  margin-bottom: 0.3rem;
-                  small {
-                    font-size: 80%;
-                    color: #565656;
-                    font-weight: 700;
-                  }
-                }
-                span {
-                  font-size: 0.75rem;
-                  color: $white;
-                  padding: 0.2rem 0.6rem;
-                  border-radius: 0.25rem;
-                }
-              }
-            }
-          }
-        }
-      }
-      .input-group-text {
-        background: lighten($color: $mutedBlack, $amount: 25);
-        border: none;
-        padding: 0.375rem 1.25rem;
-      }
-      input,
-      select,
-      textarea {
-        border: none;
-        background: lighten($color: $mutedBlack, $amount: 15);
-        color: $white;
-        font-size: 0.8775rem;
-        &:checked {
-          transition: 0.3s;
-          background: darken($color: $white, $amount: 10)
-            url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e") !important;
-        }
-        &:focus,
-        &:active {
-          border: none;
-          box-shadow: none;
-          color: $white;
-          background: lighten($color: $mutedBlack, $amount: 15);
-        }
-      }
-      .selected-game {
-        cursor: pointer;
+  }
+  .content-header {
+    padding: 1rem;
+    color: $white;
+    background: lighten($color: $dark, $amount: 5);
+    h5 {
+      margin-bottom: 0;
+    }
+    &.user {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0.25rem;
+      & > div:not(.rate) {
         display: flex;
-        width: 100%;
-        transition: 0.2s ease-in-out;
-        img {
+        & > img {
           width: 3rem;
           height: 3rem;
           border-radius: 50%;
-          margin-right: 0.8rem;
           object-fit: cover;
+          margin-right: 0.8rem;
         }
-        & > div {
+        a {
+          color: $white;
+          font-weight: 700;
           h6 {
-            color: $white;
-            margin-bottom: 0.3rem;
-            small {
-              font-size: 80%;
-              color: #565656;
-              font-weight: 700;
-            }
-          }
-          span {
-            font-size: 0.75rem;
-            color: $white;
-            padding: 0.2rem 0.6rem;
-            border-radius: 0.25rem;
+            margin-bottom: 0;
           }
         }
-      }
-      .payment-system {
-        background: linear-gradient(to right, #009cde 0%, #004497 100%);
-        border-radius: 0.25rem;
-        color: $white;
-        margin-top: 1rem;
-        h5 {
-          padding: 1rem;
-          margin-bottom: 0;
-          border-bottom: 1px solid transparentize($color: $black, $amount: 0.8);
-        }
-        & > div {
-          padding: 1rem;
-          & > div {
-            display: flex;
-            justify-content: space-between;
-            small {
-              i {
-                color: $green;
-              }
-              font-size: 80%;
-            }
-          }
-        }
-      }
-      .keys-container {
-        width: 100%;
-        text-align: center;
-        margin: 1rem 0;
-        opacity: 0.2;
-        i {
-          font-size: 4rem;
-        }
-      }
-      .searching {
-        background: lighten($color: $mutedBlack, $amount: 15);
-        text-align: center;
-        padding: 0.8rem 1rem;
-        border-radius: 0.25rem;
-        font-weight: 700;
-        color: $white;
-        margin: 1rem 0;
       }
     }
-    .content-footer {
-      padding: 1rem;
-      background: lighten($color: $dark, $amount: 5);
-      font-size: 0.875rem;
-      margin-bottom: 1rem;
-      &.search-footer {
+  }
+  .content-body {
+    padding: 1rem;
+    background: $dark;
+    .system-dropdown {
+      .input-group-text {
         padding: 0;
-        display: flex;
-        justify-content: space-between;
-        overflow: hidden;
-        .btn {
-          font-size: 0.875rem;
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-          border-radius: 0;
-        }
-      }
-      p {
-        margin-bottom: 0;
-        font-weight: 700;
-      }
-      .add-btn,
-      .reset-btn {
-        cursor: pointer;
-        border: 1px solid lighten($color: $dark, $amount: 20);
-        border-radius: 0.25rem;
-        padding: 0.3rem;
-        transition: 0.3s;
-        color: $fontColor;
-        &:hover {
-          background: lighten($color: $dark, $amount: 12);
+        &.system {
+          .dropdown-toggle {
+            cursor: pointer;
+            padding: 0.7rem 1.25rem;
+            color: $white;
+            font-weight: 700;
+            & + ul {
+              font-size: 0.875rem;
+              .system-item {
+                cursor: pointer;
+              }
+              .more {
+                &:hover {
+                  ul {
+                    display: block;
+                  }
+                }
+                ul {
+                  font-size: 0.875rem;
+                  right: -101%;
+                  font-size: 0.875rem;
+                  top: 0;
+                  .dropdown-item {
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
-    .seller {
+    .search {
+      position: relative;
+      ul {
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        position: absolute;
+        width: 100%;
+        top: 3rem;
+        left: 0;
+        display: none;
+        &.active {
+          display: block;
+        }
+        li {
+          &:last-child {
+            & > div {
+              border-radius: 0 0 0.25rem 0.25rem;
+              border-bottom: none;
+            }
+          }
+          & > div {
+            cursor: pointer;
+            display: flex;
+            background: lighten($color: $dark, $amount: 5);
+            width: 100%;
+            padding: 1rem;
+            border-bottom: 1px solid lighten($color: $dark, $amount: 10);
+            transition: 0.2s ease-in-out;
+            &:hover {
+              transform: scale(1.03);
+              box-shadow: 0 30px 50px -10px rgb(0, 0, 0);
+            }
+            img {
+              width: 3rem;
+              height: 3rem;
+              border-radius: 50%;
+              margin-right: 0.8rem;
+              object-fit: cover;
+            }
+            & > div {
+              h6 {
+                color: $white;
+                margin-bottom: 0.3rem;
+                small {
+                  font-size: 80%;
+                  color: #565656;
+                  font-weight: 700;
+                }
+              }
+              span {
+                font-size: 0.75rem;
+                color: $white;
+                padding: 0.2rem 0.6rem;
+                border-radius: 0.25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .input-group-text {
+      background: lighten($color: $mutedBlack, $amount: 25);
+      border: none;
+      padding: 0.375rem 1.25rem;
+    }
+    input,
+    select,
+    textarea {
+      border: none;
+      background: lighten($color: $mutedBlack, $amount: 15);
+      color: $white;
+      font-size: 0.8775rem;
+      &:checked {
+        transition: 0.3s;
+        background: darken($color: $white, $amount: 10)
+          url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e") !important;
+      }
+      &:focus,
+      &:active {
+        border: none;
+        box-shadow: none;
+        color: $white;
+        background: lighten($color: $mutedBlack, $amount: 15);
+      }
+    }
+    .selected-game {
+      cursor: pointer;
+      display: flex;
+      width: 100%;
+      transition: 0.2s ease-in-out;
+      img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        margin-right: 0.8rem;
+        object-fit: cover;
+      }
+      & > div {
+        h6 {
+          color: $white;
+          margin-bottom: 0.3rem;
+          small {
+            font-size: 80%;
+            color: #565656;
+            font-weight: 700;
+          }
+        }
+        span {
+          font-size: 0.75rem;
+          color: $white;
+          padding: 0.2rem 0.6rem;
+          border-radius: 0.25rem;
+        }
+      }
+    }
+    .payment-system {
+      background: linear-gradient(to right, #009cde 0%, #004497 100%);
+      border-radius: 0.25rem;
+      color: $white;
+      margin-top: 1rem;
+      h5 {
+        padding: 1rem;
+        margin-bottom: 0;
+        border-bottom: 1px solid transparentize($color: $black, $amount: 0.8);
+      }
+      & > div {
+        padding: 1rem;
+        & > div {
+          display: flex;
+          justify-content: space-between;
+          small {
+            i {
+              color: $green;
+            }
+            font-size: 80%;
+          }
+        }
+      }
+    }
+    .keys-container {
+      width: 100%;
+      text-align: center;
+      margin: 1rem 0;
+      opacity: 0.2;
+      i {
+        font-size: 4rem;
+      }
+    }
+    .searching {
+      background: lighten($color: $mutedBlack, $amount: 15);
+      text-align: center;
+      padding: 0.8rem 1rem;
+      border-radius: 0.25rem;
+      font-weight: 700;
+      color: $white;
+      margin: 1rem 0;
+    }
+  }
+  .content-footer {
+    padding: 1rem;
+    background: lighten($color: $dark, $amount: 5);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    &.search-footer {
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      .btn {
+        font-size: 0.875rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 0;
+      }
+    }
+    p {
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+    .add-btn,
+    .reset-btn {
+      cursor: pointer;
+      border: 1px solid lighten($color: $dark, $amount: 20);
+      border-radius: 0.25rem;
+      padding: 0.3rem;
+      transition: 0.3s;
+      color: $fontColor;
+      &:hover {
+        background: lighten($color: $dark, $amount: 12);
+      }
+    }
+  }
+  .seller {
+    background: linear-gradient(
+        to right,
+        transparentize($color: $blue, $amount: 0.7) 0%,
+        transparentize($color: $blue, $amount: 0.25) 50%,
+        transparentize($color: $blue, $amount: 0.7) 100%
+      ),
+      url(../images/game_pattern_white.png);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.25rem 0.25rem 0 0;
+    .form-switch {
+      display: flex;
+      align-items: center;
+      label {
+        opacity: 0.5;
+      }
+      .form-check-input {
+        float: unset !important;
+        margin-left: 1.5rem !important;
+        margin-top: 0;
+        width: 4rem;
+        height: 2rem;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23888'/%3e%3c/svg%3e");
+        &:active,
+        &:focus {
+          border: none;
+          box-shadow: none;
+        }
+        &:checked {
+          background-color: $green;
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+        }
+      }
+    }
+  }
+  .sell-btn {
+    cursor: pointer;
+    &.active {
       background: linear-gradient(
           to right,
           transparentize($color: $blue, $amount: 0.7) 0%,
@@ -258,62 +321,22 @@
           transparentize($color: $blue, $amount: 0.7) 100%
         ),
         url(../images/game_pattern_white.png);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-radius: 0.25rem 0.25rem 0 0;
-      .form-switch {
-        display: flex;
-        align-items: center;
-        label {
-          opacity: 0.5;
-        }
-        .form-check-input {
-          float: unset !important;
-          margin-left: 1.5rem !important;
-          margin-top: 0;
-          width: 4rem;
-          height: 2rem;
-          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23888'/%3e%3c/svg%3e");
-          &:active,
-          &:focus {
-            border: none;
-            box-shadow: none;
-          }
-          &:checked {
-            background-color: $green;
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-          }
-        }
-      }
     }
-    .sell-btn {
-      cursor: pointer;
-      &.active {
-        background: linear-gradient(
-            to right,
-            transparentize($color: $blue, $amount: 0.7) 0%,
-            transparentize($color: $blue, $amount: 0.25) 50%,
-            transparentize($color: $blue, $amount: 0.7) 100%
-          ),
-          url(../images/game_pattern_white.png);
-      }
-      background: linear-gradient(
-          to right,
-          transparentize($color: $black, $amount: 0.7) 0%,
-          transparentize($color: $black, $amount: 0.25) 50%,
-          transparentize($color: $black, $amount: 0.7) 100%
-        ),
-        url(../images/game_pattern_white.png);
-      cursor: pointer;
-      padding: 2rem 1rem;
-      margin: 1rem 0;
-      border-radius: 0.25rem;
-      h2 {
-        text-align: center;
-        margin-bottom: 0;
-        color: $white;
-      }
+    background: linear-gradient(
+        to right,
+        transparentize($color: $black, $amount: 0.7) 0%,
+        transparentize($color: $black, $amount: 0.25) 50%,
+        transparentize($color: $black, $amount: 0.7) 100%
+      ),
+      url(../images/game_pattern_white.png);
+    cursor: pointer;
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+    border-radius: 0.25rem;
+    h2 {
+      text-align: center;
+      margin-bottom: 0;
+      color: $white;
     }
   }
 }
