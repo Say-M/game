@@ -94,16 +94,16 @@
   }
   .right {
     width: calc(100% - 300px);
-    padding: 1rem;
+    padding: 1rem 0;
     background-color: $dark;
-    max-height: 800px;
-    overflow: auto;
     position: relative;
     @media screen and(max-width: 991.98px) {
       width: 100%;
     }
     .message-body {
       margin-bottom: 5rem;
+      max-height: calc(800px - 5rem);
+      overflow: auto;
       .sender {
         margin-left: auto;
         flex-direction: row-reverse;
@@ -145,6 +145,7 @@
         max-width: 75%;
         display: flex;
         margin-bottom: 0;
+        padding: 0 1rem;
         @media screen and(max-width: 767.98px) {
           max-width: 90%;
         }
