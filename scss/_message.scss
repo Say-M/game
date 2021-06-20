@@ -1,4 +1,4 @@
-.message {
+div.message {
   margin: 1rem 0;
   display: flex;
   position: relative;
@@ -102,7 +102,7 @@
     }
     .message-body {
       margin-bottom: 5rem;
-      max-height: calc(800px - 5rem);
+      max-height: calc(800px - 7rem);
       overflow: auto;
       .sender {
         margin-left: auto;
