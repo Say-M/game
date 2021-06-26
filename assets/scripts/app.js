@@ -57,10 +57,10 @@ const dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
 })
 
 //show search results
-const searchInput = document.querySelector('#game-search')
+const searchInput = document.querySelector('#game-search-btn')
 const searchResult = document.querySelector('.search-details')
 
-searchInput?.addEventListener('focus', () => {
+searchInput?.addEventListener('click', () => {
   searchResult.classList.add('active')
 })
 
@@ -72,7 +72,7 @@ notificationBtn?.addEventListener('click', () => {
 })
 
 //add listing page
-const searchLists = document.querySelectorAll('.search-details li > div')
+const searchLists = document.querySelectorAll('.search-details .list-item')
 const resetBtn = document.querySelector('.reset-btn')
 const searchSectionEl = document.querySelector('.search-section')
 const selectedSectionEl = document.querySelector('.selected-section')
