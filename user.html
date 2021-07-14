@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Page</title>
+
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" />
+
+    <!-- popper js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+      integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"
+      integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom script-->
+    <script src="./assets/scripts/app.js" defer></script>
+    <!-- custom styling -->
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <div class="search-box">
+          <input type="text" placeholder="search..." />
+          <i class="fas fa-times close-search-btn"></i>
+        </div>
+        <div class="left-header">
+          <div class="menu"><i class="fas fa-bars"></i></div>
+          <a href="/" class="logo">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+          <div class="ellipsis"><i class="fas fa-ellipsis-v"></i></div>
+          <ul>
+            <li class="close">
+              <a href="javascript:void(0)">
+                <i class="fas fa-times me-2"></i>
+                <span>Close</span>
+              </a>
+            </li>
+            <li class="list-nav">
+              <a href="javascript:void(0)">
+                <i class="fas fa-tags"></i>
+                <span>Listings</span>
+                <i class="fas fa-caret-down"></i>
+              </a>
+              <div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>Current Generation</p>
+                      <ul>
+                        <li><a href="./listing.html">All Listings</a></li>
+                        <li><a href="./listing.html">PlayStation 4</a></li>
+                        <li><a href="./listing.html">Xbox One</a></li>
+                        <li><a href="./listing.html">PC</a></li>
+                        <li><a href="./listing.html">Nintendo Switch</a></li>
+                        <li><a href="./listing.html">Wii U</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>REGION</p>
+                      <ul>
+                        <li><a href="./listing.html">Global</a></li>
+                        <li><a href="./listing.html">USA</a></li>
+                        <li><a href="./listing.html">EUROPE</a></li>
+                        <li><a href="./listing.html">ARGENTINA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>PRICE</p>
+                      <ul>
+                        <li><a href="./listing.html">1€</a></li>
+                        <li><a href="./listing.html">5€</a></li>
+                        <li><a href="./listing.html">10€</a></li>
+                        <li><a href="./listing.html">20€</a></li>
+                        <li><a href="./listing.html">30€</a></li>
+                        <li><a href="./listing.html">40€</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="listing-item">
+                      <p>GENRE</p>
+                      <ul>
+                        <li><a href="./listing.html">Football</a></li>
+                        <li>
+                          <a href="./listing.html">First-Person Shooter</a>
+                        </li>
+                        <li><a href="./listing.html">Action</a></li>
+                        <li><a href="./listing.html">Role-Playing</a></li>
+                        <li><a href="./listing.html">Sports</a></li>
+                        <li><a href="./listing.html">Strategy</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="/games">
+                <i class="fas fa-gamepad"></i>
+                <span>Games</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="search-btn">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-header">
+          <div class="search-btn"><i class="fas fa-search"></i></div>
+          <div class="isLogin">
+            <span class="message"> <i class="fas fa-envelope"></i></span>
+            <span class="notification">
+              <i class="fas fa-bell"></i>
+              <div class="notification-dropdown">
+                <h3>Notifications</h3>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span class="icon"
+                        ><i class="fas fa-envelope-open"></i
+                      ></span>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Culpa, accusamus.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon"
+                        ><i class="fas fa-envelope-open"></i
+                      ></span>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Culpa, accusamus.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon"
+                        ><i class="fas fa-envelope-open"></i
+                      ></span>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Culpa, accusamus.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon"
+                        ><i class="fas fa-envelope-open"></i
+                      ></span>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Culpa, accusamus.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <a href="./notification.html"
+                  ><i class="fas fa-bell me-2"></i>View all notifications</a
+                >
+              </div>
+            </span>
+            <div class="dropdown">
+              <span
+                class="user dropdown-toggle"
+                id="dropdown-user"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./assets/images/admin.jpg" alt="" />
+                <i class="fas fa-caret-down"></i>
+              </span>
+              <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="dropdown-user"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-id-badge"></i>Admin</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./balance.html"
+                    ><i class="fas fa-money-bill"></i>€ 612,72</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-tachometer-alt"></i>Dashboard</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-tags"></i>Listings</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-briefcase"></i>Offer</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-heart"></i>Whitelist</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-credit-card"></i>Report</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-bell"></i>Notifications</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-wrench"></i>Settings</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-user"></i>Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-power-off"></i>Logout</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a href="/add-listing.html" class="btn btn-sm btn-warning px-2">
+              <i class="fas fa-plus"></i
+              ><span class="d-none d-lg-inline-block ms-2">Add listing</span>
+            </a>
+          </div>
+          <!-- <div class="isLogout">
+            <div class="signin" data-bs-toggle="modal" data-bs-target="#signin">
+              <i class="fas fa-sign-in-alt"></i> Sign in
+            </div>
+            <div class="signup" data-bs-toggle="modal" data-bs-target="#create">
+              <i class="fa fa-user-plus"></i>
+            </div>
+          </div> -->
+        </div>
+        <!-- sign in modal  -->
+        <div class="modal fade" id="signin" tabindex="-1">
+          <div class="modal-dialog modal-login">
+            <div class="modal-content">
+              <div class="modal-bg"></div>
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  <i class="fas fa-sign-in-alt me-2"></i> Sign in
+                </h5>
+                <div class="d-flex flex-row-reverse align-items-center">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <button
+                    class="btn btn-sm btn-warning float-end me-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#create"
+                    data-bs-dismiss="modal"
+                  >
+                    <i class="fas fa-user-plus mr-2"></i> Create account
+                  </button>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="p-3 mb-3">
+                      <img
+                        src="./assets/images/logo.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="social-btn steam">
+                        <span class="icon"><i class="fab fa-steam"></i></span>
+                        <span>Sign in with stream</span>
+                      </div>
+                      <div class="social-btn twitter">
+                        <span class="icon"><i class="fab fa-twitter"></i></span>
+                        <span>Sign in with twitter</span>
+                      </div>
+                      <div class="social-btn facebook">
+                        <span class="icon"
+                          ><i class="fab fa-facebook-f"></i
+                        ></span>
+                        <span>Sign in with facebook</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <form action="#" class="p-3 mb-3">
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-envelope"></i
+                        ></span>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email Address"
+                        />
+                      </div>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-unlock"></i
+                        ></span>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div class="form-check mb-2">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="remember"
+                        />
+                        <label class="form-check-label" for="remember">
+                          Remember Me
+                        </label>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-animation btn-sm btn-green w-100 mb-2"
+                      >
+                        <span class="icon"
+                          ><i class="fas fa-sign-in-alt"></i
+                        ></span>
+                        <span class="text">Sign in</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-sm w-100"
+                      >
+                        Forgot your password
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- create account modal -->
+        <div class="modal fade" id="create" tabindex="-1">
+          <div class="modal-dialog modal-create">
+            <div class="modal-content">
+              <div class="modal-bg"></div>
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  <i class="fas fa-sign-in-alt me-2"></i> Sign in
+                </h5>
+                <div class="d-flex flex-row-reverse align-items-center">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <button
+                    class="btn btn-sm btn-warning float-end me-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signin"
+                    data-bs-dismiss="modal"
+                  >
+                    <i class="fas fa-sign-in-alt mr-2"></i> Sign in
+                  </button>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-sm-6">
+                    <form action="#" class="p-3 mb-3">
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-user"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Username"
+                        />
+                      </div>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-envelope"></i
+                        ></span>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email Address"
+                        />
+                      </div>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-unlock"></i
+                        ></span>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fas fa-exchange-alt"></i
+                        ></span>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Confirm password"
+                        />
+                      </div>
+                      <div class="form-check mb-2">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="remember"
+                        />
+                        <label class="form-check-label" for="remember">
+                          Remember Me
+                        </label>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-animation btn-sm btn-green w-100 mb-2"
+                      >
+                        <span class="icon"
+                          ><i class="fas fa-sign-in-alt"></i
+                        ></span>
+                        <span class="text">Sign in</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-sm w-100"
+                      >
+                        Forgot your password
+                      </button>
+                    </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="p-3 mb-3">
+                      <img
+                        src="./assets/images/logo.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="social-btn steam">
+                        <span class="icon"><i class="fab fa-steam"></i></span>
+                        <span>Sign in with stream</span>
+                      </div>
+                      <div class="social-btn twitter">
+                        <span class="icon"><i class="fab fa-twitter"></i></span>
+                        <span>Sign in with twitter</span>
+                      </div>
+                      <div class="social-btn facebook">
+                        <span class="icon"
+                          ><i class="fab fa-facebook-f"></i
+                        ></span>
+                        <span>Sign in with facebook</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="product">
+      <div class="blur-bg"></div>
+      <div class="bg-color" style="top: 50%"></div>
+      <div class="container" style="position: relative">
+        <div class="profile">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="user">
+                <img src="./assets/images/admin.jpg" alt="" />
+                <div>
+                  <h3>Admin</h3>
+                  <p>
+                    <img
+                      src="./assets/images/flags/PK.svg"
+                      width="16"
+                      alt=""
+                    />US, New York City <span>10001</span>
+                  </p>
+                  <small>ADMIN IS ONLINE</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="review-wrapper">
+                <div class="review">
+                  <div class="rating-percent">
+                    <i class="fas fa-thumbs-up text-success"></i>
+                    100%
+                  </div>
+                  <div class="rating-counts">
+                    <span class="text-danger">
+                      <i class="fa fa-thumbs-down" aria-hidden="true"></i>0
+                    </span>
+                    <i class="fa fa-minus" aria-hidden="true"></i> 0
+                    <span class="text-success"
+                      ><i class="fa fa-thumbs-up" aria-hidden="true"></i> 24
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="game-content">
+            <div class="content-tab">
+              <div>
+                <span data-target="#listing" class="active tab-btn"
+                  ><i class="fas fa-tags me-2"></i>Listing</span
+                >
+                <span data-target="#rating" class="tab-btn"
+                  ><i class="fas fa-thumbs-up me-2"></i>Rating</span
+                >
+              </div>
+            </div>
+            <div class="content">
+              <div id="listing">
+                <div class="listings">
+                  <div class="row">
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #000000"
+                              >PC</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-1.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #107c10"
+                              >Xbox One</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-2.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #073786"
+                              >PlayStation 5</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-3.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #e60012"
+                              >Nintendo Switch</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-4.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #009ac7"
+                              >Wii U</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-5.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #23a353"
+                              >Xbox Series</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-6.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #000000"
+                              >PC</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-1.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #107c10"
+                              >Xbox One</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-2.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #073786"
+                              >PlayStation 5</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-3.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #e60012"
+                              >Nintendo Switch</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-4.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #009ac7"
+                              >Wii U</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-5.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #23a353"
+                              >Xbox Series</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-6.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #000000"
+                              >PC</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-1.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #107c10"
+                              >Xbox One</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-2.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #073786"
+                              >PlayStation 5</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-3.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #e60012"
+                              >Nintendo Switch</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-4.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #009ac7"
+                              >Wii U</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-5.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #23a353"
+                              >Xbox Series</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-6.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #000000"
+                              >PC</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-1.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #107c10"
+                              >Xbox One</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-2.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #073786"
+                              >PlayStation 5</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-3.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #e60012"
+                              >Nintendo Switch</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-4.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #009ac7"
+                              >Wii U</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-5.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #23a353"
+                              >Xbox Series</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-6.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #000000"
+                              >PC</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-1.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #107c10"
+                              >Xbox One</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-2.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #073786"
+                              >PlayStation 5</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-3.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #e60012"
+                              >Nintendo Switch</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-4.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #009ac7"
+                              >Wii U</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-5.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3 col-sm-4 col-6">
+                      <div class="list-item">
+                        <a href="#">
+                          <div class="payment-enabled">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <span
+                              ><img src="./assets/images/globe.png" alt=""
+                            /></span>
+                            <span>A</span>
+                            <span><i class="fas fa-key"></i></span>
+                          </div>
+                          <div>
+                            <span
+                              class="label"
+                              style="background-color: #23a353"
+                              >Xbox Series</span
+                            >
+                            <div class="game-image">
+                              <img
+                                src="./assets/images/games/game-6.jpg"
+                                alt=""
+                              />
+                              <div class="game-title">Until We Die</div>
+                            </div>
+                          </div>
+                          <span class="price">€ 10,00</span>
+                        </a>
+                        <a href="./user.html" class="published-by">
+                          <img src="./assets/images/admin.jpg" alt="" />
+                          <strong>Admin</strong>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="page-pagination">
+                    <div class="prev">«</div>
+                    <div class="pages">
+                      <span class="active">1</span>
+                      <span>2</span>
+                      <span>3</span>
+                      <span>4</span>
+                      <span>5</span>
+                      <span>6</span>
+                      <span>7</span>
+                      <span>8</span>
+                      <span>9</span>
+                      <span>10</span>
+                    </div>
+                    <div class="next">»</div>
+                  </div>
+                </div>
+              </div>
+              <div id="rating" class="d-none">
+                <ul class="notification">
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fas fa-thumbs-up"></i>
+                        <img src="./assets/images/no_avatar.jpg" alt="" />
+                      </div>
+                      <div class="right">
+                        <p>Rating from sulabh0503</p>
+                        <span class="notice"
+                          ><i class="fa fa-quote-left" aria-hidden="true"></i>
+                          It's good and working
+                          <i class="fa fa-quote-right" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="my-3">
+                <button class="btn btn-sm btn-danger">
+                  <i class="fas fa-trash"></i> Ban
+                </button>
+                <button class="btn btn-sm btn-secondary">
+                  <i class="fas fa-edit"></i> Edit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="one">
+      <div class="container-fluid platforms">
+        <div class="row">
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+            <img
+              src="./assets/images/ps3_tiny.png"
+              class="img-fluid"
+              alt="PlayStation 3"
+            />
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+            <img src="./assets/images/pc_tiny.png" class="img-fluid" alt="PC" />
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+            <img
+              src="./assets/images/xboxone_tiny.png"
+              class="img-fluid"
+              alt="Xbox One"
+            />
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+            <img
+              src="./assets/images/ps4_tiny.png"
+              class="img-fluid"
+              alt="PlayStation 4"
+            />
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+            <img
+              src="./assets/images/xbox360_tiny.png"
+              class="img-fluid"
+              alt="Xbox 360"
+            />
+          </a>
+          <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-2 text-center">
+            <img
+              src="./assets/images/wii-u_tiny.png"
+              class="img-fluid"
+              alt="Wii U"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="footer-item">
+              <a href="/" class="logo mb-4 d-inline-block">
+                <img src="./assets/images/logo.png" alt="" />
+              </a>
+              <p>Our Mobile Apps</p>
+              <div class="d-flex">
+                <div class="me-2">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/download-apple.png"
+                    alt=""
+                  />
+                </div>
+                <div class="ms-2">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/download-google.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer-item">
+              <h5>Sell</h5>
+              <ul>
+                <li><a href="#">Selling Questions</a></li>
+                <li><a href="#">How to Sell</a></li>
+                <li><a href="#">Sell In-Game Items</a></li>
+                <li><a href="#">Sell Video Games</a></li>
+                <li><a href="#">Sell Gift Cards</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer-item">
+              <h5>Buy</h5>
+              <ul>
+                <li><a href="#">Buying Questions</a></li>
+                <li><a href="#">How to Buy</a></li>
+                <li><a href="#">Buy In-Game Items</a></li>
+                <li><a href="#">Buy Video Games</a></li>
+                <li><a href="#">Buy Gift Cards</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer-item">
+              <h5>Resources</h5>
+              <ul>
+                <li><a href="#">How Does Gameflip Work</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Developer API</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer-item">
+              <h5>Join our Community</h5>
+              <ul class="social">
+                <li>
+                  <a href="#"><i class="fab fa-discord"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+              </ul>
+              <ul class="social">
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="links">
+                <a href="#">About us</a>
+                <a href="#">Terms of use</a>
+                <a href="#">Privacy policy</a>
+              </div>
+              <p>Copyright &copy; 2021 ijji, Inc. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="./assets/images/icon_payment_logos.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const tabBtns = document.querySelectorAll('.tab-btn')
+      const contentSections = document.querySelectorAll('.content > div')
+      tabBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          tabBtns.forEach((tabBtn) => tabBtn.classList.remove('active'))
+          btn.classList.add('active')
+          contentSections.forEach((content) => content.classList.add('d-none'))
+          document
+            .querySelector(btn.getAttribute('data-target'))
+            .classList.remove('d-none')
+        })
+      })
+    </script>
+  </body>
+</html>

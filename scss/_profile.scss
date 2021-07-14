@@ -1,0 +1,106 @@
+.profile {
+  position: relative;
+  z-index: 111;
+  margin-top: 2rem;
+  .user {
+    display: flex;
+    & > img {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1rem;
+    }
+    & > div {
+      line-height: 1.3;
+      h3 {
+        color: $white;
+        margin-bottom: 0;
+      }
+      p {
+        margin-bottom: 0;
+        color: $white;
+        img {
+          margin-right: 0.3rem;
+        }
+      }
+      small {
+        font-size: 0.75rem;
+      }
+    }
+  }
+  .review-wrapper {
+    text-align: right;
+    @media screen and(max-width: 767.98px) {
+      text-align: left;
+      margin: 1rem 0;
+    }
+  }
+  .review {
+    display: inline-block;
+    border-radius: 0.25rem;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: transparentize($color: $black, $amount: 0.8);
+    .rating-percent {
+      font-size: 1.8rem;
+      color: $white;
+      font-weight: 500;
+      border-bottom: 5px solid $green;
+      padding: 0 0.5rem;
+      margin: 0 -0.5rem;
+      margin-bottom: 0.3rem;
+    }
+    .rating-counts {
+      font-size: 0.85rem;
+      color: darken($color: $white, $amount: 20);
+      span {
+        margin: 0 0.25rem;
+      }
+      i {
+        margin-right: 0.3rem;
+      }
+    }
+  }
+  .game-content {
+    margin-top: 90px;
+    @media screen and(max-width: 991.98px) {
+      margin-top: 100px !important;
+    }
+    @media screen and(max-width: 767.98px) {
+      margin-top: 55px !important;
+    }
+  }
+}
+#rating {
+  .notification {
+    li {
+      a {
+        background: url('../images/game_pattern_white.png')
+          darken($color: $green, $amount: 10);
+        .left {
+          background-color: unset;
+          i {
+            color: $white;
+            font-size: 2rem;
+            margin-right: 1rem;
+          }
+          img {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+        }
+        .right {
+          p {
+            color: $white;
+          }
+          .notice {
+            color: $white;
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

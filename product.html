@@ -924,6 +924,8 @@
       const contentSections = document.querySelectorAll('.content > div')
       tabBtns.forEach(btn=>{
         btn.addEventListener('click',()=>{
+        tabBtns.forEach(tabBtn => tabBtn.classList.remove('active'))
+        btn.classList.add('active')
           contentSections.forEach(content=>content.classList.add('d-none'))
           document.querySelector(btn.getAttribute('data-target')).classList.remove('d-none')
         })
